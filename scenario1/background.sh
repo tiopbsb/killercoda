@@ -13,7 +13,7 @@ echo "aluno ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/aluno
 sudo usermod -aG sudo aluno
 
 # ajustar as permissões
-sudo chmod 0440 /etc/sudoers.d/aluno
+sudo chmod 0440 /etc/sudoers.d/aluno 
 
 # faz login como 'aluno'
 echo "sudo su - aluno" >> /etc/profile
