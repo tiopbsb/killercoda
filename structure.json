@@ -1,5 +1,8 @@
 {
   "items": [
-    { "path": "scenario1", "title": "Override title of course ONE" }
+    { 
+      "path": "scenario1", 
+      "title": "Override title of course ONE" 
+    }
   ]
 }
