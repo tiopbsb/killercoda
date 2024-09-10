@@ -18,4 +18,6 @@ sudo chmod 0440 /etc/sudoers.d/aluno
 # faz login como 'aluno'
 sudo su - aluno
 
+echo "teste"
+
 exit 0
