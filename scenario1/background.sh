@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "teste 0"
 
 # cria o usuário aluno com a pasta home
 sudo useradd -m -s /bin/bash aluno
