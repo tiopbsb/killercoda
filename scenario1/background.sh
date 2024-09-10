@@ -15,7 +15,14 @@ sudo usermod -aG sudo aluno
 # ajustar as permissões
 sudo chmod 0440 /etc/sudoers.d/aluno 
 
-# faz login como 'aluno'
+# loga como aluno
+sudo su - aluno
+
+# cria a pasta
+mkdir diretorio_01
+
+
+# prepara login como 'aluno'
 echo "sudo su - aluno" >> /root/.bashrc
 
 exit 0
