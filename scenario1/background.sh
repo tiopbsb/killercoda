@@ -16,6 +16,6 @@ sudo usermod -aG sudo aluno
 sudo chmod 0440 /etc/sudoers.d/aluno
 
 # faz login como 'aluno'
-su - aluno
+sudo su - aluno
 
 exit 0
