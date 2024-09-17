@@ -1,7 +1,6 @@
 {
   "items": [
-    { "path": "scenario1" },
-    { "path": "scenario2" }
-   
+    { "path": "lesson01" },
+    { "path": "lesson02", "title": "Override title of lição 02" }
   ]
 }
