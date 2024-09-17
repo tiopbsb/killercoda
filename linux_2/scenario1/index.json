@@ -1,0 +1,20 @@
+{
+  "title": "Lição 1: listando arquivos",
+  "description": "Listando arquivos e diretórios",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Open, edit and close a file",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
