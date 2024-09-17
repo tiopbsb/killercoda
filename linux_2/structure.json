@@ -1,7 +1,6 @@
 {
   "items": [
-    { "path": "scenario1" },
-    { "path": "scenario2" }
+    { "path": "scenario1" }
    
   ]
 }
