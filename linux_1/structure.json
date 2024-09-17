@@ -1,4 +1,19 @@
 {
+  "scenarios": [
+    {
+      "folderName": "lesson01",
+      "title": "User Management",
+      "subtitle": "Configuration and Administration of User Profiles",
+      "description": "Includes creating, editing, and deleting user profiles, as well as managing permissions."
+    },
+    {
+      "folderName": "lesson02",
+      "title": "Product Management",
+      "subtitle": "Adding, Updating, and Removing Products from the Catalog",
+      "description": "Covers operations for adding new products, updating existing information, and removing products."
+    }
+  ],
+
   "items": [
     { "path": "lesson01" },
     { "path": "lesson02", "title": "Override title of lição 02" }
