@@ -1,6 +1,6 @@
 {
   "title": "Fundamentos do Linux",
-  "description": "Explore o mundo do Linux com nosso curso introdutório, projetado para iniciantes",
+  "description": "Explore o mundo do Linux com nosso curso introdutório, projetado para iniciantes. Aprenda os fundamentos do sistema operacional de código aberto, incluindo a navegação no terminal, manipulação de arquivos e diretórios, e gestão de permissões, edição de texto e a execução de comandos básicos. Ideal para quem deseja uma base sólida para avançar no uso do Linux e explorar suas vastas possibilidades no mundo da tecnologia.",
   "items": [
     { 
       "path": "lesson01", 
