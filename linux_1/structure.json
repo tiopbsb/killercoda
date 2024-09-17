@@ -1,7 +1,6 @@
 {
-  "title": "Gerenciamento de Usuários",
-  "subtitle": "Configuração e Administração de Perfis de Usuário",
-  "description": "Este cenário abrange a criação, edição e exclusão de perfis de usuário, incluindo gerenciamento de permissões e configurações de perfil.",
+  "title": "Fundamentos do Linux",
+  "description": "Explore o mundo do Linux com nosso curso introdutório, projetado para iniciantes",
   "items": [
     { 
       "path": "lesson01", 
