@@ -6,9 +6,13 @@
     },
     "steps": [
       {
-        "title": "O comando 'ls'",
-        "text": "step1/text.md",
-        "verify": "step1/verify.sh"
+        "title": "Primeira olhada no comando 'ls'",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "Obtenha mais informação",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       }
     ]
   },
