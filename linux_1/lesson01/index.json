@@ -6,7 +6,7 @@
     },
     "steps": [
       {
-        "title": "Open, edit and close a file",
+        "title": "O comando _ls_",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       }
