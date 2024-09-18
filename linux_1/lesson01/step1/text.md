@@ -1,25 +1,25 @@
-Vim has a lot of functionality to make editing very easy for users.
+# O que significa `ls`{{}}?
 
-Let's learn your first steps with the console based editor Vim!
+O primeiro comando que aprenderemos é `ls`{{}}. Este comando vem da palavra `list`{{}}. Isso nos permite... listar o conteúdo de um diretório.
 
-&nbsp;
+`ls`{{}} é o comando que podemos encontrar em todos os sistemas _Unix-like_ (Linux, por exemplo). Podemos vê-lo como um dos comandos 'principais' do sistema.
 
-First open a new file:
+Ok, vamos brincar um pouco com isso.
 
-```plain
-vim my-file
-```{{exec}}
+Execute `ls`{{exec}}
 
-Next type `i` to get into the insert-mode. The mode is shown on bottom left
+O que vemos na tela é uma lista do conteúdo do diretório atual.
 
-Now type any text, like `hello world`!
+O que notamos de imediato é que temos cores diferentes. Podemos imaginar o que isso significa, mas vamos esquecê-lo por um instante. Podemos retirar as cores da resposta do comando:
 
-To get into command-mode press `Esc`{{}}
+`ls --color=no`{{exec}}
 
-To save the file we need to type `:x` and confirm with `Enter`{{}}
+Então, isso nos leva à primeira saída, a lista colorida de conteúdo. Para tê-lo, precisamos executar
 
-This will close Vim and we can view the newly created file:
+`ls --color=yes`{{exec}}
 
-```plain
-cat my-file
-```{{exec}}
+ou, alternativamente, por enquanto
+
+`ls --color=auto`{{exec}} .
+
+Por enquanto, será suficiente dizer que essa opção colorida é adicionada como padrão em algun lugar do sistema, chegaremos lá em uma das lições futuras.
