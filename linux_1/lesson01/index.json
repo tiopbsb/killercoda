@@ -22,9 +22,13 @@
 				"text": "step4/text.md"
 			},
 			{
-				"title": "_help_ e outras opções",
-				"text": "step5/text.md",
-				"verify": "step5/verify.sh"
+				"title": "'help' e outras opções",
+				"text": "step5/text.md"
+			},
+			{
+				"title": "Teste seus conhecimentos",
+				"text": "step6/text.md",
+				"verify": "step6/verify.sh"
 			}
 		]
 	},
