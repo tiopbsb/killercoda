@@ -29,7 +29,10 @@
 				"title": "Teste seus conhecimentos",
 				"text": "step6/text.md"
 			}
-		]
+		],
+		"finish": {
+			"text": "finish.md"
+		}
 	},
 	"backend": {
 		"imageid": "ubuntu"
