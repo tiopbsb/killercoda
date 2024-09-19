@@ -5,14 +5,15 @@ Q1: Qual é o comando completo para mostrar uma lista formatada longa dos arquiv
 <details>
 <summary>Resposta</summary>
 ls -l
-</details>
 
+</details>
 
 Q2: Qual é o argumento para ordenar arquivos?
 
 <details>
 <summary>Resposta</summary>
 S
+
 </details>
 
 Q3: Quero passar o argumento de `color`{{}}. O que preciso usar?
@@ -24,6 +25,7 @@ Q3: Quero passar o argumento de `color`{{}}. O que preciso usar?
 <details>
 <summary>Resposta</summary>
 Opção 1 --
+
 </details>
 
 Q4: O que representa UID?
@@ -36,6 +38,7 @@ Q4: O que representa UID?
 <details>
 <summary>Resposta</summary>
 Opção 2: identificador de usuário
+
 </details>
 
 Q5: Quero listar os arquivos do diretório pai. O que preciso adicionar ao meu comando `ls`{{}}?
@@ -43,6 +46,7 @@ Q5: Quero listar os arquivos do diretório pai. O que preciso adicionar ao meu c
 <details>
 <summary>Resposta</summary>
 ..
+
 </details>
 
 Q6: Tenho o comando `ls -lt`{{}}. Qual argumento preciso adicionar para ver a lista ordenada pela modificação do conteúdo dos arquivos?
@@ -50,6 +54,7 @@ Q6: Tenho o comando `ls -lt`{{}}. Qual argumento preciso adicionar para ver a li
 <details>
 <summary>Resposta</summary>
 u
+
 </details>
 
 Q7: Forneça o comando completo para listar arquivos no formato longo com visualização do tamanho legível por humanos.
@@ -57,4 +62,5 @@ Q7: Forneça o comando completo para listar arquivos no formato longo com visual
 <details>
 <summary>Resposta</summary>
 ls -lh
+
 </details>
