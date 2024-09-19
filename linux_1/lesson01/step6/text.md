@@ -7,6 +7,7 @@ Q1: Qual é o comando completo para mostrar uma lista formatada longa dos arquiv
 ls -l
 </details>
 
+
 Q2: Qual é o argumento para ordenar arquivos?
 
 <details>
