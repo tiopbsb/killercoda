@@ -44,8 +44,6 @@ Por enquanto, basta saber que na listagem acima vemos os nomes dos usuários e g
 
 Esse comando funciona como o `ls -l`{{}}, mas ele altera os nomes amigáveis para _UIDs_ e _GIDs_.
 
-```
-Agora, listamos todos os arquivos em ordem alfabética.
-```
+> Agora, listamos todos os arquivos em ordem alfabética.
 
  Mas... todos os arquivos?
