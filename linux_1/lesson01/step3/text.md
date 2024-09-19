@@ -6,7 +6,7 @@ O Linux usa um ponto (.) no início do nome do objeto oculto. Estes arquivos amb
 
 `ls`{{exec}}
 
-Humm, não há arquivos "ocultos".
+Humm, não há arquivos ocultos.
 
 Sim, precisamos encontrar o argumento apropriado. Desta vez será `-a`{{}}.
 
@@ -14,11 +14,16 @@ Sim, precisamos encontrar o argumento apropriado. Desta vez será `-a`{{}}.
 
 Esse comando listou muito mais arquivos do que antes. Muitos _dotfiles_! Não importa o que eles são, pelo menos por enquanto. Mas dois deles precisam ser explicados.
 
-- `.`{{}}: O primeiro, . simplesmente significa o diretório atual em que o usuário se encontra.
-- `..`{{}}: O segundo, .. significa o diretório pai. Ou seja, o diretório que está um nível acima daquele em que o usuário se encontra.
+- `.`{{}} 
+- `..`{{}}
+
+O primeiro, `.`{{}} simplesmente significa o diretório atual em que você se encontra.
+
+o segundo, `..`{{}} significa o diretório pai. Ou seja, o diretório que está um nível acima daquele em que você se encontra.
+
 Simples assim :)
 
-> Estas entradas especiais `.`{{}} e `..`{{}} servem para traçar um caminho relativo de um objeto. Ou seja, o caminho até o objeto, em relação ao diretório em que o usuário se encontra.
+> As entradas especiais `.`{{}} e `..`{{}} servem para traçar um caminho relativo de um objeto. Ou seja, o caminho até o objeto, em relação ao diretório em que o usuário se encontra.
 Exemplo: é fácil perceber que o comando `ls .` pode mostrar resultados diferentes infulenciados pelo conteúdo do diretório em que é aplicado.
 
 Então... Vamos tentar algo.
