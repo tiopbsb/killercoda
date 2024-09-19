@@ -15,7 +15,7 @@ sudo usermod -aG sudo aluno
 # ajustar as permissões
 sudo chmod 0440 /etc/sudoers.d/aluno 
 
-# loga como aluno
+# loga como aluno para copiar a pasta com os arquivos
 sudo su - aluno << 'EOF'
 
 # Baixa o arquivo ZIP do repositório
@@ -25,7 +25,7 @@ curl -L -o repo.zip https://github.com/tiopbsb/killercoda/archive/refs/heads/mai
 unzip repo.zip
 
 # Copia a pasta files para a home do aluno
-cp -r killercoda-main/linux_basico/cap_01/files ~/files
+cp -r killercoda-main/linux_basico/cap_01/files/* ~/
 
 # Remove o arquivo ZIP e a pasta extraída
 rm repo.zip
