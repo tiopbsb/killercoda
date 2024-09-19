@@ -16,11 +16,25 @@ sudo usermod -aG sudo aluno
 sudo chmod 0440 /etc/sudoers.d/aluno 
 
 # loga como aluno
-sudo su - aluno
+sudo su - aluno << 'EOF'
 
-# cria a pasta
-mkdir diretorio_01
+# Baixa o arquivo ZIP do repositório
+curl -L -o repo.zip https://github.com/tiopbsb/killercoda/archive/refs/heads/main.zip
 
+# Extrai o arquivo ZIP
+unzip repo.zip
+
+# Copia a pasta files para a home do aluno
+cp -r killercoda-main/linux_basico/cap01/files ~/files
+
+# Remove o arquivo ZIP e a pasta extraída
+rm repo.zip
+rm -rf killercoda-main
+
+# Sai do shell
+exit
+
+EOF
 
 # prepara login como 'aluno'
 echo "sudo su - aluno" >> /root/.bashrc

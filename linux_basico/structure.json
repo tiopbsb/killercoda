@@ -3,12 +3,12 @@
   "description": "Linux para iniciantes",
   "items": [
     { 
-      "path": "lesson01", 
+      "path": "cap_01", 
       "title": "Capítulo I: listando arquivos",
       "description": "Listando arquivos e diretórios" 
     },
     { 
-      "path": "lesson02", 
+      "path": "cap_02", 
       "title": "Capítulo II: man - o seu melhor amigo",
       "description": "Como usar o 'man', a melhor ajuda no Linux" 
     }
