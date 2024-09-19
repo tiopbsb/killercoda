@@ -1,4 +1,4 @@
-## Vejamos o que você aprendeu.
+## Vejamos o que você aprendeu
 
 Q1: Qual é o comando completo para mostrar uma lista formatada longa dos arquivos?
 
@@ -24,7 +24,7 @@ Q3: Quero passar o argumento de `color`{{}}. O que preciso usar?
 
 <details>
 <summary>Resposta</summary>
-Opção 1 --
+Opção 1: --
 
 </details>
 
