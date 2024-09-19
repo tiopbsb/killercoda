@@ -21,7 +21,7 @@ Nosso primeiro argumento nos dará mais detalhes. Execute:
 Aqui o `-`{{}} indica que passaremos argumentos. Existem duas maneiras de fazer isso:
 
 - \- Um traço informa ao sistema que vamos passar um argumento de uma letra, como l.
-- \--Dois traços indicam que o argumento conterá mais de uma letra, geralmente uma palavra em inglês.
+- \-- Dois traços indicam que o argumento conterá mais de uma letra, geralmente uma palavra em inglês.
 
 O `l`{{}} significa "formato de listagem longa" (long listing format).
 

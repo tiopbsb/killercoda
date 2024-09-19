@@ -10,9 +10,13 @@
         "text": "step1/text.md"
       },
       {
-        "title": "Obtenha mais informação",
+        "title": "Obtenha mais informações",
         "text": "step2/text.md",
-        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Liste todos os arquivos",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
       }
     ]
   },
