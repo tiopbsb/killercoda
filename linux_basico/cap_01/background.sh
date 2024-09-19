@@ -25,7 +25,7 @@ curl -L -o repo.zip https://github.com/tiopbsb/killercoda/archive/refs/heads/mai
 unzip repo.zip
 
 # Copia a pasta files para a home do aluno
-cp -r killercoda-main/linux_basico/cap01/files ~/files
+cp -r killercoda-main/linux_basico/cap_01/files ~/files
 
 # Remove o arquivo ZIP e a pasta extraída
 rm repo.zip
