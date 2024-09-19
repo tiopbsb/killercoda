@@ -27,6 +27,10 @@
 			},
 			{
 				"title": "Teste seus conhecimentos",
+				"text": "step6/text.md"
+			},
+			{
+				"title": "Teste seus conhecimentos",
 				"text": "step6/text.md",
 				"verify": "step6/verify.sh"
 			}
