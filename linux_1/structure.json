@@ -4,12 +4,12 @@
   "items": [
     { 
       "path": "lesson01", 
-      "title": "Lição 1: listando arquivos",
+      "title": "Capítulo I: listando arquivos",
       "description": "Listando arquivos e diretórios" 
     },
     { 
       "path": "lesson02", 
-      "title": "Lição 2: man - seu melhor amigo",
+      "title": "Capítulo II: man - o seu melhor amigo",
       "description": "Como usar o 'man', a melhor ajuda no Linux" 
     }
   ]
