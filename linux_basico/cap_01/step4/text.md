@@ -38,27 +38,32 @@ Vamos tentar:
 
 Usamos dois argumentos para observar melhor as coisas. Podemos especificar exatamente o tempo de modificação adicionando `u`{{}} à lista de argumentos. Mas, por favor, lembre-se de que, para imprimir essa informação corretamente, você deve usar `t`{{}} com outro argumento (neste caso, `u`{{}}).
 
-`ls -ltu`{{}}
+`ls -ltu`{{exec}}
 
 Ok, agora vamos listar e ordenar pelos metadados (_ ctime_  - mudança de metadados).
 
-`ls -ltc`{{}}
+`ls -ltc`{{exec}}
 Bem, não mudou muito, certo? Por favor, execute esses comandos e observe cuidadosamente a saída:
 
 `touch oArquivoMaisNovo`{{exec}}
 > O último comando cria um novo arquivo chamado `oArquivoMaisNovo`.
 
 `ls -ltu`{{exec}}
+
 `ls -ltc`{{exec}}
+
 `echo "uma nova linha adicionada!" > file-02`{{exec}} 
 > O último comando adiciona algo ao arquivo, alterando o seu conteúdo.
 
 `ls -ltu`{{exec}}
+
 `ls -ltc`{{exec}}
+
 `chmod 444 file-01`{{exec}}
 > O último comando muda as permissões do arquivo, alterando seus metadados.
 
 `ls -ltu`{{exec}}
+
 `ls -ltc`{{exec}}
 
 Por favor, dedique um tempo para entender o que foi impresso e como. Usamos alguns comandos novos, mas não perca muito tempo com eles agora.
@@ -71,17 +76,17 @@ Como de costume, temos várias opções para isso.
 
 Primeiro, executamos este comando:
 
-`ls -s`{{copy}}
+`ls -s`{{exec}}
 
 Isso mostra uma lista curta dos arquivos e o espaço alocado. Como já sabemos, podemos combinar esse argumento, `-s`{{}}, com outros. Vamos fazer isso:
 
-`ls -ls`{{copy}}
+`ls -ls`{{exec}}
 
 Mas isso é o que você já tem por padrão, usando `ls -l`{{}}, certo? Não? Você está correto, a resposta é não. Dê uma olhada no início de cada linha, é onde você pode ver o que foi adicionado pelo `-s`{{}}.
 
 Por que usamos `s`{{}}? Eu queria que você prestasse atenção aqui. Quando usamos o `S`{{}} maiúsculo, isso significa ordenar.
 
-`ls -lS`{{copy}} isso ordena os arquivos por tamanho, começando pelos maiores.
+`ls -lS`{{exec}} isso ordena os arquivos por tamanho, começando pelos maiores.
 
 > **Então, os argumentos são sensíveis a maiúsculas e minúsculas, como... tudo no Linux.**
 
@@ -89,7 +94,7 @@ Antes de usarmos o próximo comando, há um argumento a mais que precisamos apre
 
 Vamos tentar:
 
-`ls -lh`{{}} isso imprime o tamanho dos arquivos não em bytes, mas de forma mais legível, com K (KiloByte), M (MegaByte), ou G (GigaByte).
+`ls -lh`{{exec}} isso imprime o tamanho dos arquivos não em bytes, mas de forma mais legível, com K (KiloByte), M (MegaByte), ou G (GigaByte).
 
 O `h`{{}} usa potências de 1024. Então, 1K é 1 elevado a 1024. Temos outra opção:
 
@@ -97,4 +102,4 @@ O `h`{{}} usa potências de 1024. Então, 1K é 1 elevado a 1024. Temos outra op
 
 Ok, vamos tentar ordenar com o parâmetro h:
 
-`ls -lSh`{{copy}}
+`ls -lSh`{{exec}}

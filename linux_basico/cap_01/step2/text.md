@@ -10,9 +10,20 @@ Antes de aprendermos como obter mais detalhes, há um comando que vamos executar
 
 O que ele faz? Bem, ele limpa a tela.
 
-Agora, vamos finalmente aprender mais sobre o comando `ls`{{}}. Ele possui vários argumentos que podemos adicionar para alterar a saída do comando.
+Agora, vamos finalmente aprender mais sobre o comando `ls`{{}}. Aqui está sua SINTAXE:
 
-Algo importante a entender: o que passamos após o comando são **argumentos**. Não são chaves, parâmetros, etc. Podemos ouvir esses termos, mas, para aprender a trabalhar corretamente com Linux, devemos nomear os elementos com a convenção adequada.
+> **ls** [OPTION]... [FILE]...
+
+Note que ele aceita dois tipos de parâmetros:
+
+- _OPTIONS_ - são as opções de listagem; e
+- _FILE_ - arquivo ou diretório (neste caso, o seu conteúdo) que se deseja listar.
+
+**Obs.: a ordem dos parâmetros não faz diferença no comando.**
+
+Há vários argumentos para o parâmetro _OPTIONS_ que podemos adicionar para alterar a saída do comando.
+
+> Algo importante a entender: o que passamos após o comando são **argumentos**. Não são chaves, parâmetros, etc. Podemos ouvir esses termos, mas, para aprender a trabalhar corretamente com Linux, devemos nomear os elementos com a convenção adequada.
 
 Nosso primeiro argumento nos dará mais detalhes. Execute:
 
@@ -20,8 +31,8 @@ Nosso primeiro argumento nos dará mais detalhes. Execute:
 
 Aqui o `-`{{}} indica que passaremos argumentos. Existem duas maneiras de fazer isso:
 
-- \- Um traço informa ao sistema que vamos passar um argumento de uma letra, como l.
-- \-- Dois traços indicam que o argumento conterá mais de uma letra, geralmente uma palavra em inglês.
+- `-`{{}} Um traço informa ao sistema que vamos passar um argumento de uma letra, como l.
+- `--`{{}} Dois traços indicam que o argumento conterá mais de uma letra, geralmente uma palavra em inglês.
 
 O `l`{{}} significa "formato de listagem longa" (long listing format).
 

@@ -1,14 +1,14 @@
 # O que significa `ls`{{}}?
 
-O primeiro comando que aprenderemos é `ls`{{}}. Este comando vem da palavra `list`{{}}. Isso nos permite... listar o conteúdo de um diretório.
+O primeiro comando que aprenderemos é o `ls`{{}}. Este comando vem da palavra `list`{{}}. Isso nos permite... listar o conteúdo de um diretório.
 
-`ls`{{}} é o comando que podemos encontrar em todos os sistemas _Unix-like_ (Linux, por exemplo). Podemos vê-lo como um dos comandos 'principais' do sistema.
+`ls`{{}} é o comando que podemos encontrar em todos os sistemas _Unix-like_ (Linux, por exemplo). Podemos vê-lo como um dos comandos _principais_ (nativos) do sistema.
 
-> **Nota:** Sistemas Unix-like são sistemas operacionais que seguem a filosofia e as normas do Unix original. Eles compartilham características comuns, como:
-> - Estrutura de Arquivos: Hierarquia de diretórios organizada, geralmente começando pela raiz (/);
-> - Multitarefa e Multiusuário: Suporte para executar várias tarefas simultaneamente e para múltiplos usuários acessarem o sistema ao mesmo tempo; e
-> - Interface de Linha de Comando (CLI): Frequentemente, incluem uma shell que permite interações através de comandos de texto;
-> Exemplos de sistemas Unix-like incluem Linux, BSD, Solaris e macOS. Esses sistemas são amplamente utilizados em servidores, desktops e dispositivos embarcados.
+> **Nota:** Sistemas _Unix-like_ são sistemas operacionais que seguem a filosofia e as normas do Unix original. Eles compartilham características comuns, como:
+> - Estrutura de Arquivos: hierarquia de diretórios organizada, geralmente começando pela raiz (/);
+> - Multitarefa e multiusuário: suporte para executar várias tarefas simultaneamente e para múltiplos usuários acessarem o sistema ao mesmo tempo; e
+> - Interface de linha de comando (_CLI_): Frequentemente, incluem um _shell_ que permite interações através de comandos de texto;
+> Exemplos de sistemas _Unix-like_ incluem Linux, BSD, Solaris e macOS. Esses sistemas são amplamente utilizados em servidores, desktops e dispositivos embarcados.
 
 Ok, vamos brincar um pouco com isso.
 
