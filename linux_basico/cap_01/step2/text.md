@@ -48,6 +48,14 @@ O formato contém algumas colunas. Vamos tentar entender o que elas representam:
 - Data e hora da última modificação do arquivo.
 - Nome do arquivo.
 
+Listando o conteúdo do diretório documentos.
+
+`ls -l documentos`{{exec}}
+
+Lembre-se que a ordem dos parâmetros não importa.
+
+`ls documentos -l`{{exec}}
+
 ### Proprietário e grupo
 Por enquanto, basta saber que na listagem acima vemos os nomes dos usuários e grupos. O sistema mantém e traduz essas informações de representações numéricas. Esses números são o UID (_User Identifier_ ) para o usuário e o GID (_Group Identifier_) para o grupo. Podemos listar essas informações de forma numérica, executando o comando:
 

@@ -52,14 +52,14 @@ Bem, não mudou muito, certo? Por favor, execute esses comandos e observe cuidad
 
 `ls -ltc`{{exec}}
 
-`echo "uma nova linha adicionada!" > file-02`{{exec}} 
+`echo "uma nova linha adicionada!" > arquivo02`{{exec}} 
 > O último comando adiciona algo ao arquivo, alterando o seu conteúdo.
 
 `ls -ltu`{{exec}}
 
 `ls -ltc`{{exec}}
 
-`chmod 444 file-01`{{exec}}
+`chmod 444 arquivo.txt`{{exec}}
 > O último comando muda as permissões do arquivo, alterando seus metadados.
 
 `ls -ltu`{{exec}}

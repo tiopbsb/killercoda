@@ -2,6 +2,16 @@
 
 # cria o usuário aluno com a pasta home
 sudo useradd -m -s /bin/bash aluno
+sudo useradd -m -s /bin/bash marcos
+sudo useradd -m -s /bin/bash ezequiel
+sudo useradd -m -s /bin/bash anderson
+
+# cria um grupo 'alunos'
+sudo groupadd alunos
+sudo usermod -aG alunos aluno
+sudo usermod -aG alunos marcos
+sudo usermod -aG alunos ezequiel
+sudo usermod -aG alunos anderson
 
 # definir a senha para o usuário aluno
 echo "aluno:senha" | sudo chpasswd
