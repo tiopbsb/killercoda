@@ -41,9 +41,9 @@ unzip repo.zip
 # Copia a pasta files para a home do aluno
 cp -r killercoda-main/linux_basico/cap_01/files/* ~/
 
+cp killercoda-main/linux_basico/cap_01/files/arquivo02 /files/modelo2.docx
+cp killercoda-main/linux_basico/cap_01/files/arquivo.txt /files/modelo3.docx
 cp killercoda-main/linux_basico/cap_01/files/arquivo /files/modelo1.docx
-cp killercoda-main/linux_basico/cap_01/files/arquivo.txt /files/modelo2.docx
-cp killercoda-main/linux_basico/cap_01/files/arquivo02 /files/modelo3.docx
 
 sudo chown marcos:engenharia /files/modelo1.docx
 sudo chown ezequiel:engenharia /files/modelo2.docx
@@ -57,6 +57,13 @@ rm -rf killercoda-main
 exit
 
 EOF
+
+# Para capturar a saída do último comando digitado (para checagem)
+
+PROMPT_COMMAND='LAST_COMMAND=$(history 1 | sed "s/^ *[0-9]* *//"); eval "$LAST_COMMAND" &> /tmp/last_output'
+echo "$PROMPT_COMMAND" >> /home/aluno/.bashrc
+
+# Adiciona a faixa de boas-vindas no shell
 
 boas_vindas=$(cat <<EOF
 
