@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Captura a saída do comando digitado pelo aluno
-actual_output=$(cat /tmp/last_update)
+actual_output=$(cat /tmp/last_output)
 
 # Define a saída esperada
 expected_output="total 24K
@@ -11,7 +11,7 @@ expected_output="total 24K
 
 # Verifica se a saída do comando corresponde à saída esperada
 if [[ "$actual_output" == "$expected_output" ]]; then
-  exit 0  # sucesso
+  echo 0  # sucesso
 else
-  exit 1  # falha
+  echo 1  # falha
 fi

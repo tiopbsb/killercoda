@@ -5,8 +5,8 @@ Liste os arquivos da pasta `/files`{{}} ordenando por tamanho (do maior para o m
 Execute o comando e depois clique em `CHECK`{{}} para validar o resutado.
 
 <details>
-<summary>Tente fazer sem olhar a resposta</summary>
-`ls -lhS`{{exec}}
+<summary>Tente fazer sem olhar a resposta:</summary>
+`ls -lhS`
 - `ls`{{}} lista o conteúdo.
 - `opção -l`{{}} mostra o formato longo (detalhado).
 - `opção -h`{{}} mostra o tamanho na unidade mais amigável (humana).
