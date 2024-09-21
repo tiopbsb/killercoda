@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Captura a saída do comando 'ls -lsh /files'
-actual_output=$(ls -lsh /files 2>/dev/null)
+# Captura a saída do comando digitado pelo aluno
+actual_output=$(cat /tmp/last_update)
 
 # Define a saída esperada
 expected_output="total 24K
@@ -11,8 +11,7 @@ expected_output="total 24K
 
 # Verifica se a saída do comando corresponde à saída esperada
 if [[ "$actual_output" == "$expected_output" ]]; then
-  echo "done"
+  exit 0  # sucesso
 else
-  echo "Falha: O comando não foi executado corretamente ou a saída não corresponde."
-  exit 1
+  exit 1  # falha
 fi
