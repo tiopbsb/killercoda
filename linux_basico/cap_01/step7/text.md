@@ -6,9 +6,9 @@ Execute o comando e depois clique em `CHECK`{{}} para validar o resutado.
 
 <details>
 <summary>Tente fazer sem olhar a resposta:</summary>
-`ls -lhS`
-- `ls`{{}} lista o conteúdo.
-- `opção -l`{{}} mostra o formato longo (detalhado).
-- `opção -h`{{}} mostra o tamanho na unidade mais amigável (humana).
-- `opção -S`{{}} ordena pelo tamanho (do maior para o menor).
+<ul><b>ls -lhS</b>
+<li>ls - lista o conteúdo.</li>
+<li>opção -l - mostra o formato longo (detalhado).</li>
+<li>opção -h - mostra o tamanho na unidade mais amigável (humana).</li>
+<li>opção -S - ordena pelo tamanho (do maior para o menor).</li></ul>
 </details><br>
