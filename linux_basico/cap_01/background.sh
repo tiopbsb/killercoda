@@ -58,9 +58,9 @@ exit
 
 EOF
 
-bem_vindo=$(cat <<EOF
+boas_vindas=$(cat <<EOF
 
-data=\$(date '+%a, %d %b %y, %H:%Mp')
+data=\$(date '+%a, %d %b %y, %H:%M BSB')
 
 bold_green='\e[1;32m'
 NC='\e[0m'
@@ -85,7 +85,7 @@ EOF
 )
 
 # Adicionar conteúdo ao final do .bashrc do aluno
-echo "$bem_vindo" >> /home/aluno/.bashrc
+echo "$boas_vindas" >> /home/aluno/.bashrc
 
 
 # prepara login como 'aluno'

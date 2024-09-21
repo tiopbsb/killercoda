@@ -28,6 +28,11 @@
 			{
 				"title": "Teste seus conhecimentos",
 				"text": "step6/text.md"
+			},
+			{
+				"title": "Prova final",
+				"text": "step7/text.md",
+				"verify": "step7/verify.sh"
 			}
 		],
 		"finish": {
