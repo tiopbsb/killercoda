@@ -60,7 +60,10 @@ EOF
 
 # Para capturar a saída do último comando digitado (para checagem)
 
-PROMPT_COMMAND='LAST_COMMAND=$(history 1 | sed "s/^ *[0-9]* *//"); eval "$LAST_COMMAND" &> /tmp/last_output'
+PROMPT_COMMAND='LAST_COMMAND=$(history 1 | sed "s/^ *[0-9]* *//"); bash -c "$LAST_COMMAND" > /tmp/last_output 2>&1'
+
+
+#PROMPT_COMMAND='LAST_COMMAND=$(history 1 | sed "s/^ *[0-9]* *//"); eval "$LAST_COMMAND" &> /tmp/last_output'
 echo "PROMPT_COMMAND='${PROMPT_COMMAND}'" >> /home/aluno/.bashrc
 
 # Adiciona a faixa de boas-vindas no shell
