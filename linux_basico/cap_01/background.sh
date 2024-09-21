@@ -25,12 +25,12 @@ sudo usermod -aG sudo aluno
 # ajustar as permissões
 sudo chmod 0440 /etc/sudoers.d/aluno 
 
+# loga como aluno para copiar a pasta com os arquivos
+sudo su - aluno << 'EOF'
+
 # cria a pasta /files
 sudo mkdir /files
 sudo chown aluno:engenharia /files
-
-# loga como aluno para copiar a pasta com os arquivos
-sudo su - aluno << 'EOF'
 
 # Baixa o arquivo ZIP do repositório
 curl -L -o repo.zip https://github.com/tiopbsb/killercoda/archive/refs/heads/main.zip
