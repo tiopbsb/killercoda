@@ -58,6 +58,36 @@ exit
 
 EOF
 
+bem_vindo=$(cat <<EOF
+
+data=\$(date '+%a, %d %b %y, %H:%Mp')
+
+bold_green='\e[1;32m'
+NC='\e[0m'
+
+echo -e "\$bold_green"
+
+echo -e "  __  .__                ___.          ___.    "
+echo -e "_/  |_|__| ____ ______   \\\\_ |__   _____\\\\_ |__  "
+echo -e "\\\\   __\\\\  |/  _ \\\\\\\\____  \\\\   | __ \\\\ /  ___/| __ \\\\ "
+echo -e " |  | |  (  <_> )  |_> >  | \\\\_\\\\ \\\\___  \\\\ | \\\\_\\\\ \\\\"
+echo -e " |__| |__|\\\\____/|   __/   |___  /____  >|___  /"
+echo -e "                |__|          \\\\/     \\\\/     \\\\/ "
+echo -e " "
+echo -e "# Bem-vindo ao nosso curso de Linux Básico"
+echo -e " "
+echo -e "# \$data"
+echo -e " "
+
+echo -e "\$NC "
+
+EOF
+)
+
+# Adicionar conteúdo ao final do .bashrc do aluno
+echo "$bem_vindo" >> /home/aluno/.bashrc
+
+
 # prepara login como 'aluno'
 echo "sudo su - aluno" >> /root/.bashrc
 
