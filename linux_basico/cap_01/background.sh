@@ -45,9 +45,9 @@ cp killercoda-main/linux_basico/cap_01/files/arquivo /files/modelo1.docx
 cp killercoda-main/linux_basico/cap_01/files/arquivo.txt /files/modelo2.docx
 cp killercoda-main/linux_basico/cap_01/files/arquivo02 /files/modelo3.docx
 
-chown marcos:engenharia /files/modelo1.docx
-chown ezequiel:engenharia /files/modelo2.docx
-chown anderson:engenharia /files/modelo3.docx
+sudo chown marcos:engenharia /files/modelo1.docx
+sudo chown ezequiel:engenharia /files/modelo2.docx
+sudo chown anderson:engenharia /files/modelo3.docx
 
 # Remove o arquivo ZIP e a pasta extraída
 rm repo.zip
