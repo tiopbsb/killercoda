@@ -8,7 +8,7 @@ expected_output="total 24K -rw-rw-r-- 1 marcos engenharia 11K xxx xx xx:xx model
 
 # Verifica se a saída do comando corresponde à saída esperada
 if [[ "$actual_output" == "$expected_output" ]]; then
-  echo 0  # sucesso
+  echo 1  # sucesso
 else
-  echo 1  # falha
+  echo 0  # falha
 fi
