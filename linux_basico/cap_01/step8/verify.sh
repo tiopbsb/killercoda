@@ -12,7 +12,9 @@ expected_output="total 24K -rw-rw-r-- 1 marcos engenharia 11K modelo1.docx -rw-r
 
 # Verifica se a saída do comando corresponde à saída esperada
 if [[ "$actual_output" == "$expected_output" ]]; then
-  exit 0  # sucesso
+  echo "Parabéns! Comando correto!"
+  #exit 0  # sucesso
 else
-  exit 1  # falha
+  echo "Ooops! Comando errado."
+  #exit 1  # falha
 fi

@@ -13,12 +13,12 @@ O `?`{{}} representa um único caractere. Ele é usado para combinar nomes de ar
 
 `la -l arquivo0?`{{exec}}
 
-### Colchetes ( **[]** )
+### Colchetes ( **[ ]** )
 Os colchetes permitem que você especifique um conjunto de caracteres que pode aparecer em uma determinada posição.
 
 `la -l arquivo0[24]`{{exec}}
 
-### Hífen dentro dos colchetes ( **[x-y]** )
+### Hífen dentro dos colchetes ( [x **-** y] )
 Dentro de colchetes, o hífen permite que você defina um intervalo de caracteres (entre _x_ e _y_).
 
 `la -l arquivo0[2-4]`{{exec}}
@@ -28,7 +28,7 @@ Colocando `!`{{}} ou `^`{{}} logo após o colchete de abertura ([!...] ou [^...]
 
 `la -l arquivo0[^24]`{{exec}}
 
-### Chaves ( **{}** )
+### Chaves ( **{ }** )
 As chaves são usadas para expandir um conjunto de opções e criar padrões mais complexos. Diferente dos outros coringas, elas não são padrões globais, mas são expandidas pelo próprio shell antes de passar os argumentos para o comando.
 
 Liste todos os arquivos do diretório `cartas/`{{}}
@@ -41,12 +41,3 @@ Agora, usando os coringos, liste todos os arquivos do diretório `cartas/`{{}} q
 <summary>Tente fazer sem olhar a resposta</summary>
 ls -l cartas/carta*.{doc,txt}
 </details><br>
-
-### Conclusão
-Dois últimos comandos neste cenário:
-
-`ls --version`{{exec}} imprime a versão do aplicativo `ls`{{}}.
-
-Todos os comandos que usamos aqui estão disponíveis na ajuda. Como obter ajuda?
-
-`ls --help`{{exec}}
