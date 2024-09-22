@@ -53,9 +53,6 @@ sudo chown anderson:engenharia /files/modelo3.docx
 rm repo.zip
 rm -rf killercoda-main
 
-# Cria o arquivo para armazenar a última saída
-touch /tmp/resposta
-
 # Sai do shell
 exit
 
@@ -63,7 +60,7 @@ EOF
 
 # Para capturar a saída do último comando digitado (para checagem)
 
-PROMPT_COMMAND='LAST_COMMAND=$(history 1 | sed "s/^ *[0-9]* *//"); eval "$LAST_COMMAND" &> /tmp/last_output;'
+PROMPT_COMMAND='LAST_COMMAND=$(history 1 | sed "s/^ *[0-9]* *//"); eval "$LAST_COMMAND" &> /tmp/last_output_tmp; cp /tmp/last_output_tmp /tmp/last_output'
 echo "PROMPT_COMMAND='${PROMPT_COMMAND}'" >> /home/aluno/.bashrc
 
 # Adiciona a faixa de boas-vindas no shell
