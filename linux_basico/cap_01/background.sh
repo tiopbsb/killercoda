@@ -41,6 +41,15 @@ unzip repo.zip
 # Copia a pasta files para a home do aluno
 cp -r killercoda-main/linux_basico/cap_01/files/* ~/
 
+# Modifica os metadados de data e hora
+touch -m -t 202408210755.00 arquivo02
+touch -m -t 202408210943.00 arquivo
+touch -m -t 202408211251.00 arquivo.txt
+touch -m -t 202407031245.00 documentos
+touch -m -t 202403200911.00 cartas
+touch -m -t 202410110118.00 planilhas
+
+# Copia arquivos para a pasta /files
 cp killercoda-main/linux_basico/cap_01/files/arquivo02 /files/modelo2.docx
 cp killercoda-main/linux_basico/cap_01/files/arquivo.txt /files/modelo3.docx
 cp killercoda-main/linux_basico/cap_01/files/arquivo /files/modelo1.docx

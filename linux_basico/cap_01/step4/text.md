@@ -15,7 +15,7 @@ Antes de começarmos, no entanto, há um conceito que precisamos abordar. O Linu
 
 É a representação numérica do tempo. É o número de segundos passados desde a _Unix epoch_, que é meia-noite do dia 1º de janeiro de 1970.
 
-> O _timestamp_ 1 representa a data e hora 01/01/1970 00:00:01. A partir daí, o valor do _timestamp_ é incrementado de 1 a cada segundo que passa. Ou seja, o _timestamp_ de uma determinada data e hora é a quantidade de segundos desde 01/01/1970 00:00:00 até a referida data e hora.
+> O _timestamp_ 1 representa a data e hora **01/01/1970 00:00:01**. A partir daí, o valor do _timestamp_ é incrementado de 1 a cada segundo que passa. Ou seja, o _timestamp_ de uma determinada data e hora é a quantidade de segundos desde 01/01/1970 00:00:00 até a referida data e hora.
 
 Um exemplo de como ele é mostrado está abaixo:
 
@@ -76,7 +76,7 @@ Como de costume, temos várias opções para isso.
 
 Primeiro, executamos este comando:
 
-`ls -s`{{exec}}
+`ls -s`{{exec}} ('s' minúsculo)
 
 Isso mostra uma lista curta dos arquivos e o espaço alocado. Como já sabemos, podemos combinar esse argumento, `-s`{{}}, com outros. Vamos fazer isso:
 
