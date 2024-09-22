@@ -100,6 +100,6 @@ O `h`{{}} usa potências de 1024. Então, 1K é 1 elevado a 1024. Temos outra op
 
 `ls -l --si`{{exec}} que usa potências de 1000. Mas... acho que ninguém usa isso. :)
 
-Ok, vamos tentar ordenar com o parâmetro h:
+Ok, vamos tentar ordenar com o argumento `h`{{}}:
 
 `ls -lSh`{{exec}}

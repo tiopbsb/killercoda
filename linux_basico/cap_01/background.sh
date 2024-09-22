@@ -53,6 +53,8 @@ touch -m -t 202410110118.00 planilhas
 cp killercoda-main/linux_basico/cap_01/files/arquivo02 /files/modelo2.docx
 cp killercoda-main/linux_basico/cap_01/files/arquivo.txt /files/modelo3.docx
 cp killercoda-main/linux_basico/cap_01/files/arquivo /files/modelo1.docx
+cp killercoda-main/linux_basico/cap_01/files/arquivo04 /files/profile.docx
+cp killercoda-main/linux_basico/cap_01/files/arquivo03 /files/modelo1.txt
 
 sudo chown marcos:engenharia /files/modelo1.docx
 sudo chown ezequiel:engenharia /files/modelo2.docx

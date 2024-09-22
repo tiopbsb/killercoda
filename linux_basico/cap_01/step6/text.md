@@ -23,21 +23,12 @@ Dentro de colchetes, o hífen permite que você defina um intervalo de caractere
 
 `la -l arquivo0[2-4]`{{exec}}
 
-### Exclamação ou Circunflexo dentro de colchetes ( **[!]** ou **[^]** )
-Colocando `!`{{}} ou `^`{{}} logo após o colchete de abertura ([!...] ou [^...]), você pode corresponder a qualquer caractere que não esteja dentro dos colchetes.
+### Circunflexo dentro de colchetes ( [ **^** ] )
+Colocando `^`{{}} (ou ainda o `!`{{}}) logo após o colchete de abertura ([^...] ou [!...]), você pode corresponder a qualquer caractere que não esteja dentro dos colchetes.
 
 `la -l arquivo0[^24]`{{exec}}
 
 ### Chaves ( **{ }** )
 As chaves são usadas para expandir um conjunto de opções e criar padrões mais complexos. Diferente dos outros coringas, elas não são padrões globais, mas são expandidas pelo próprio shell antes de passar os argumentos para o comando.
 
-Liste todos os arquivos do diretório `cartas/`{{}}
-
-`ls -l cartas/`{{exec}}
-
-Agora, usando os coringos, liste todos os arquivos do diretório `cartas/`{{}} que comecem por _carta_ e possuem a extensão _.doc_ ou _.txt_.
-
-<details>
-<summary>Tente fazer sem olhar a resposta</summary>
-ls -l cartas/carta*.{doc,txt}
-</details><br>
+`ls -l arquivo0{2,3}`{{exec}}

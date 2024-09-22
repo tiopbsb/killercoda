@@ -55,3 +55,16 @@ Q7: Forneça o comando completo para listar arquivos no formato longo com visual
 <summary>Resposta</summary>
 ls -lh
 </details><br>
+
+Q8: Liste no formato longo apenas os nomes dos diretórios (não seus conteúdos).
+<details>
+<summary>Resposta</summary>
+ls -ld */
+</details><br>
+
+Q9. Sabendo que `ls -l cartas/`{{exec}} lista todos os arquivos do diretório `cartas/`{{}}, use os coringas para listar todos os arquivos, deste diretório, que comecem por _carta_ e possuem a extensão _.doc_ ou _.txt_.
+
+<details>
+<summary>Resposta</summary>
+ls -l cartas/carta*.{doc,txt}
+</details><br>
