@@ -13,7 +13,7 @@ EOF
 #texto esperado...
 #EOF
 #)
-
+#e assim por diante...
 
 # Converte as saídas corretas para uma única linha e remove espaços extras
 respostas_certas=()
