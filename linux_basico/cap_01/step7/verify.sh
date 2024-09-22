@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Preservo a última resposta do aluno
-cat /tmp/last_output > /tmp/resposta
+cat /tmp/resposta > /tmp/resp
 
 # Captura a saída do comando digitado pelo aluno (única linha, sem as datas e sem espaços excessivos)
-actual_output=$(cat /tmp/resposta | tr '\n' ' ' | sed 's/[A-Za-z]\{3\} [0-9]\{1,2\} [0-9]\{1,2\}:[0-9]\{2\}//g' | sed 's/  */ /g; s/^ //; s/ $//')
+actual_output=$(cat /tmp/resp | tr '\n' ' ' | sed 's/[A-Za-z]\{3\} [0-9]\{1,2\} [0-9]\{1,2\}:[0-9]\{2\}//g' | sed 's/  */ /g; s/^ //; s/ $//')
 
 # Define a saída esperada
 # Em única linha e sem as datas (porque variam) para facilitarr a comparação.
