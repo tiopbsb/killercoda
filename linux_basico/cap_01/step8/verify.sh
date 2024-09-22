@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Resposta esperada (exatamente)
+# Respostas esperadas (exatamente)
 # Digite os comandos que trazem as saídas desejadas e coloque-as aqui
 saidas_corretas=(
 $(cat <<EOF
@@ -9,19 +9,25 @@ $(cat <<EOF
 -rw-rw-r-- 1 ezequiel engenharia 2.9K Dec 11  2023 /files/modelo2.docx
 EOF
 )
+# Você pode adicionar outras saídas aqui usando outra linha com 'cat <<EOF' 
 #$(cat <<EOF
-# se houver outra saída aceitável, colocar aqui
+#texto esperado...
+#EOF
 #)
 )
 
 # Converte as saídas corretas para uma única linha e remove espaços extras
 respostas_certas=()
-for item in "${saida_correta[@]}"; do
+for item in "${saidas_corretas[@]}"; do
   respostas_certas+=("$(echo "$item" | tr '\n' ' ' | sed 's/  */ /g; s/^ //; s/ $//')")
 done
 
 # Preservo a última resposta do aluno
 cat /tmp/last_output > /tmp/resposta
+
+# Captura a saída do comando digitado pelo aluno (única linha e sem espaços excessivos)
+actual_output=$(cat /tmp/resposta | tr '\n' ' ' | sed 's/  */ /g; s/^ //; s/ $//')
+echo "$actual_output" > /tmp/actual_output
 
 # Inicializa a variável para verificar se há correspondência
 resultado=1  # Assume falha
