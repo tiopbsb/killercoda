@@ -2,19 +2,18 @@
 
 # Respostas esperadas (exatamente)
 # Digite os comandos que trazem as saídas desejadas e coloque-as aqui
-saidas_corretas=(
-$(cat <<EOF
+saidas_corretas[0]=$(cat <<EOF
 -rw-rw-r-- 1 marcos   engenharia  11K Nov 29  2023 /files/modelo1.docx
 -rw-rw-r-- 1 anderson engenharia 4.4K Mar 14  2024 /files/modelo3.docx
 -rw-rw-r-- 1 ezequiel engenharia 2.9K Dec 11  2023 /files/modelo2.docx
 EOF
 )
-# Você pode adicionar outras saídas aqui usando outra linha com 'cat <<EOF' 
-#$(cat <<EOF
+# Você pode adicionar outras saídas aqui usando outro índice para o array
+#saidas_corretas[1]=$(cat <<EOF
 #texto esperado...
 #EOF
 #)
-)
+
 
 # Converte as saídas corretas para uma única linha e remove espaços extras
 respostas_certas=()
