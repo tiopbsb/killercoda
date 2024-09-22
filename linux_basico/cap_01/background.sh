@@ -57,9 +57,9 @@ cp killercoda-main/linux_basico/cap_01/files/arquivo04 /files/profile.docx
 cp killercoda-main/linux_basico/cap_01/files/arquivo03 /files/modelo1.txt
 
 # muda as datas de criação
-touch -m -t 202311290101.00 /files/modelo1.docx
-touch -m -t 202312110202.00 /files/modelo2.docx
-touch -m -t 202403140303.00 /files/modelo3.docx
+sudo touch -m -t 202311290101.00 /files/modelo1.docx
+sudo touch -m -t 202312110202.00 /files/modelo2.docx
+sudo touch -m -t 202403140303.00 /files/modelo3.docx
 
 # muda os proprietários
 sudo chown marcos:engenharia /files/modelo1.docx
