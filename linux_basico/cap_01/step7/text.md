@@ -9,10 +9,10 @@ Execute o comando e depois clique em `CHECK`{{}} para validar o resutado.
 <ul>
 	<li><strong>ls -lhS</strong>
 		<ul>
-			<li>ls - lista o conteúdo.</li>
-			<li>opção -l - mostra o formato longo (detalhado).</li>
-			<li>opção -h - mostra o tamanho na unidade mais amigável (humana).</li>
-			<li>opção -S - ordena pelo tamanho (do maior para o menor).</li>
+			<li>ls: lista o conteúdo.</li>
+			<li>opção -l: mostra o formato longo (detalhado).</li>
+			<li>opção -h: mostra o tamanho na unidade mais amigável (humana).</li>
+			<li>opção -S: ordena pelo tamanho (do maior para o menor).</li>
 		</ul>
 	</li>
 </ul>

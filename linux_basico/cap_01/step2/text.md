@@ -2,7 +2,7 @@
 
 Certo. Sabemos como obter a lista de itens de um diretório.
 
-Mas isso ainda é pouco informativo. Sim, temos uma visualização. Mas sem detalhes.
+Mas isso ainda é pouco informativo. Sim, temos uma visualização; mas sem detalhes.
 
 Antes de aprendermos como obter mais detalhes, há um comando que vamos executar agora para limpar a tela:
 
@@ -16,12 +16,12 @@ Agora, vamos finalmente aprender mais sobre o comando `ls`{{}}. Aqui está sua S
 
 Note que ele aceita dois tipos de parâmetros:
 
-- _OPTIONS_ - são as opções de listagem; e
+- _OPTION_ - são as opções de listagem; e
 - _FILE_ - arquivo ou diretório (neste caso, o seu conteúdo) que se deseja listar.
 
 **Obs.: a ordem dos parâmetros não faz diferença no comando.**
 
-Há vários argumentos para o parâmetro _OPTIONS_ que podemos adicionar para alterar a saída do comando.
+Há vários argumentos para o parâmetro _OPTION_ que podemos adicionar para alterar a saída do comando.
 
 > Algo importante a entender: o que passamos após o comando são **argumentos**. Não são chaves, parâmetros, etc. Podemos ouvir esses termos, mas, para aprender a trabalhar corretamente com Linux, devemos nomear os elementos com a convenção adequada.
 
@@ -31,10 +31,10 @@ Nosso primeiro argumento nos dará mais detalhes. Execute:
 
 Aqui o `-`{{}} indica que passaremos argumentos. Existem duas maneiras de fazer isso:
 
-- `-`{{}} Um traço informa ao sistema que vamos passar um argumento de uma letra, como l.
-- `--`{{}} Dois traços indicam que o argumento conterá mais de uma letra, geralmente uma palavra em inglês.
+- `-`{{}} Um traço informa ao sistema que vamos passar um argumento de uma letra, como `-a`{{}}.
+- `--`{{}} Dois traços indicam que o argumento conterá mais de uma letra, geralmente uma palavra em inglês, como `--all`{{}}.
 
-O `l`{{}} significa "formato de listagem longa" (long listing format).
+O `-l`{{}} significa "formato de listagem longa" (long listing format).
 
 ### O que temos aqui?
 
@@ -65,4 +65,4 @@ Esse comando funciona como o `ls -l`{{}}, mas ele altera os nomes amigáveis par
 
 > Agora, listamos todos os arquivos em ordem alfabética.
 
- Mas... todos os arquivos?
+ Mas... será mesmo que estamos vendo todos os arquivos?

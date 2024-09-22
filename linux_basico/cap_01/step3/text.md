@@ -2,13 +2,13 @@
 
 Talvez você já saiba que existem muitos arquivos e diretórios que são ocultos. Isso geralmente significa que esses objetos não são listados ao usar comandos padrão de listagem ou ainda na visualização padrão em interfaces gráficas - GUI (_Graphical User Interface_). 
 
-O Linux usa um ponto (.) no início do nome do objeto oculto. Estes arquivos ambém são chamados de `dotfiles`{{}} (arquivos de ponto). Ok, vamos listar os arquivos novamente.
+O Linux usa um ponto (.) no início do nome do objeto oculto. Estes arquivos ambém são chamados de _dotfiles_. Ok, vamos listar os arquivos novamente.
 
 `ls`{{exec}}
 
-Humm, não há arquivos ocultos.
+Humm, será que há arquivos ocultos?
 
-Sim, precisamos encontrar o argumento apropriado. Desta vez será `-a`{{}}.
+Sim, precisamos encontrar o argumento apropriado. Desta vez será `-a`{{}} ou `--all`{{}}.
 
 `ls -a`{{exec}}
 
