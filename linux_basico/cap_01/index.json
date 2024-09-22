@@ -26,13 +26,17 @@
 				"text": "step5/text.md"
 			},
 			{
-				"title": "Teste seus conhecimentos",
+				"title": "Os coringas do Linux",
 				"text": "step6/text.md"
 			},
 			{
+				"title": "Teste seus conhecimentos",
+				"text": "step7/text.md"
+			},
+			{
 				"title": "Prova final",
-				"text": "step7/text.md",
-				"verify": "step7/verify.sh"
+				"text": "step8/text.md",
+				"verify": "step8/verify.sh"
 			}
 		],
 		"finish": {

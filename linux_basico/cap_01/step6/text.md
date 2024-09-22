@@ -1,57 +1,52 @@
-## Vejamos o que você aprendeu
+## Os caracteres coringas
+Coringas (ou _wildcards_) são caracteres especiais usados para corresponder a padrões em nomes de arquivos e diretórios. Eles são extremamente úteis para realizar ações sobre múltiplos arquivos ou diretórios que correspondam a um certo padrão.
 
-Q1: Qual é o comando completo para mostrar uma lista formatada longa dos arquivos?
+Aqui estão os principais coringas e seus usos:
 
-<details>
-<summary>Resposta</summary>
-ls -l
-</details><br>
+### Asterisco ( **\*** )
+O `*`{{}} representa qualquer sequência de caracteres (incluindo nenhum). Ele é amplamente usado para selecionar todos os arquivos que correspondam a um certo padrão.
 
-Q2: Qual é o argumento para ordenar arquivos?
+`ls -l arq*`{{exec}}
 
-<details>
-<summary>Resposta</summary>
-S
-</details><br>
+### Interrogação ( **?** )
+O `?`{{}} representa um único caractere. Ele é usado para combinar nomes de arquivos que tenham um determinado número de caracteres e onde apenas um caractere específico varia.
 
-Q3: Quero passar o argumento de `color`{{}}. O que preciso usar?
+`la -l arquivo0?`{{exec}}
 
-1. `--`
-2. `-`
-3. `.`
+### Colchetes ( **[]** )
+Os colchetes permitem que você especifique um conjunto de caracteres que pode aparecer em uma determinada posição.
 
-<details>
-<summary>Resposta</summary>
-Opção 1: --
-</details><br>
+`la -l arquivo0[24]`{{exec}}
 
-Q4: O que representa UID?
+### Hífen dentro dos colchetes ( **[x-y]** )
+Dentro de colchetes, o hífen permite que você defina um intervalo de caracteres (entre _x_ e _y_).
 
-1. Identificador de processo
-2. Identificador de usuário
-3. Identificador de grupo
-4. Identificador de sistema interno
+`la -l arquivo0[2-4]`{{exec}}
 
-<details>
-<summary>Resposta</summary>
-Opção 2: identificador de usuário
-</details><br>
+### Exclamação ou Circunflexo dentro de colchetes ( **[!]** ou **[^]** )
+Colocando `!`{{}} ou `^`{{}} logo após o colchete de abertura ([!...] ou [^...]), você pode corresponder a qualquer caractere que não esteja dentro dos colchetes.
 
-Q5: Quero listar os arquivos do diretório pai. O que preciso adicionar ao meu comando `ls`{{}}?
-<details>
-<summary>Resposta</summary>
-..
-</details><br>
+`la -l arquivo0[^24]`{{exec}}
 
-Q6: Tenho o comando `ls -lt`{{}}. Qual argumento preciso adicionar para ver a lista ordenada pela modificação do conteúdo dos arquivos?
-<details>
-<summary>Resposta</summary>
-u
-</details><br>
+### Chaves ( **{}** )
+As chaves são usadas para expandir um conjunto de opções e criar padrões mais complexos. Diferente dos outros coringas, elas não são padrões globais, mas são expandidas pelo próprio shell antes de passar os argumentos para o comando.
 
-Q7: Forneça o comando completo para listar arquivos no formato longo com visualização do tamanho legível por humanos.
+Liste todos os arquivos do diretório `cartas/`{{}}
+
+`ls -l cartas/`{{exec}}
+
+Agora, usando os coringos, liste todos os arquivos do diretório `cartas/`{{}} que comecem por _carta_ e possuem a extensão _.doc_ ou _.txt_.
 
 <details>
-<summary>Resposta</summary>
-ls -lh
+<summary>Tente fazer sem olhar a resposta</summary>
+ls -l cartas/carta*.{doc,txt}
 </details><br>
+
+### Conclusão
+Dois últimos comandos neste cenário:
+
+`ls --version`{{exec}} imprime a versão do aplicativo `ls`{{}}.
+
+Todos os comandos que usamos aqui estão disponíveis na ajuda. Como obter ajuda?
+
+`ls --help`{{exec}}
