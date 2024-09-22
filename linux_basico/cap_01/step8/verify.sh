@@ -10,7 +10,7 @@ echo "$actual_output" > /tmp/actual_output
 # Define a saída esperada
 # Em única linha e sem as datas (porque variam) para facilitarr a comparação.
 expected_output="total 24K -rw-rw-r-- 1 marcos engenharia 11K modelo1.docx -rw-rw-r-- 1 anderson engenharia 4.4K modelo3.docx -rw-rw-r-- 1 ezequiel engenharia 2.9K modelo2.docx"
-echo "$expected_output" > /tmp/actual_output
+echo "$expected_output" > /tmp/expected_output
 
 # Verifica se a saída do comando corresponde à saída esperada
 if [[ "$actual_output" == "$expected_output" ]]; then
