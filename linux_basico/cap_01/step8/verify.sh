@@ -4,12 +4,15 @@
 cat /tmp/last_output > /tmp/resposta
 
 # Captura a saída do comando digitado pelo aluno (única linha, sem as datas e sem espaços excessivos)
-actual_output=$(cat /tmp/resposta | tr '\n' ' ' | sed 's/[A-Za-z]\{3\} [0-9]\{1,2\} [0-9]\{1,2\}:[0-9]\{2\}//g' | sed 's/  */ /g; s/^ //; s/ $//')
+#actual_output=$(cat /tmp/resposta | tr '\n' ' ' | sed 's/[A-Za-z]\{3\} [0-9]\{1,2\} [0-9]\{1,2\}:[0-9]\{2\}//g' | sed 's/  */ /g; s/^ //; s/ $//')
+
+# Captura a saída do comando digitado pelo aluno (única linha e sem espaços excessivos)
+actual_output=$(cat /tmp/resposta | tr '\n' ' ' | sed 's/  */ /g; s/^ //; s/ $//')
 echo "$actual_output" > /tmp/actual_output
 
 # Define a saída esperada
 # Em única linha e sem as datas (porque variam) para facilitarr a comparação.
-expected_output="-rw-rw-r-- 1 marcos   engenharia  11K Sep 22 17:20 /files/modelo1.docx -rw-rw-r-- 1 anderson engenharia 4.4K Sep 22 17:20 /files/modelo3.docx -rw-rw-r-- 1 ezequiel engenharia 2.9K Sep 22 17:20 /files/modelo2.docx"
+expected_output="-rw-rw-r-- 1 marcos engenharia 11K Nov 29  2023 /files/modelo1.docx -rw-rw-r-- 1 anderson engenharia 4.4K Mar 14 2024 /files/modelo3.docx -rw-rw-r-- 1 ezequiel engenharia 2.9K Dec 11 2023 /files/modelo2.docx"
 echo "$expected_output" > /tmp/expected_output
 
 # Verifica se a saída do comando corresponde à saída esperada
