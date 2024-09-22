@@ -71,8 +71,8 @@ rm repo.zip
 rm -rf killercoda-main
 
 # cria os arquivos de resposta (aproveitando o usuário aluno)
-touch /tmp/{last_output_tmp,last_output,resposta,expected_output,actual_output}
-chmod 666 /tmp/{last_output_tmp,last_output,resposta,expected_output,actual_output}
+#touch /tmp/{last_output_tmp,last_output,resposta,expected_output,actual_output}
+#chmod 666 /tmp/{last_output_tmp,last_output,resposta,expected_output,actual_output}
 
 # Sai do shell
 exit
