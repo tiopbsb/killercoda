@@ -4,6 +4,6 @@ Olá! Seja bem-vindo a este tutorial onde aprenderemos nosso primeiro comando do
 
 Aproveite este capítulo e prepare-se para o _quiz_ no final.
 
-O cenário está sendo preparado...
-
 Divirta-se e boa sorte!
+
+_O cenário está sendo preparado..._
