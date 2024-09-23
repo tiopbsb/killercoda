@@ -4,7 +4,7 @@ Primeiro, vamos verificar o que temos no nosso diretório atual.
 
 `ls -l`{{exec}}
 
-Para criar um diretório, precisamos usar o comando `mkdir`{{}} (**M**a**K**e **DIR**ectory).
+Para criar um diretório, precisamos usar o comando `mkdir`{{}} (_**M**a**K**e **DIR**ectory_).
 
 Ok, vamos criar uma estrutura.
 
@@ -40,4 +40,6 @@ Vamos ver o que criamos.
 
 `ls -l`{{exec}}
 
-`ls -l dir_pai`{{exec}}
+`ls -l dir_pai/`{{exec}}
+
+Voce lembra a opção do comando `ls` que lista o conteúdo dos subdiretórios também? Caso não lembre, sabe onde procurar...
