@@ -1,20 +1,17 @@
-## Mais alguns argumentos
-Para finalizar, alguns argumentos úteis. Dê uma olhada nesles:
+## Seções do Manual
+As man pages estão divididas em várias seções numeradas, onde cada seção cobre diferentes tipos de documentação. Aqui estão algumas seções principais:
 
-- `ls -al --author`{{exec}} imprime o nome de usuário do autor do arquivo.
-- `ls -ld`{{exec}} imprime o nome do diretório ao invés de seu conteúdo. Ex.: `ls -ld planilhas`{{exec}}.
-- `ls -ali`{{exec}} imprime inodes (haverá uma lição sobre inodes).
-- `ls -alR`{{exec}} imprime recursivamente todos os subdiretórios.
-- `ls -alr`{{exec}} imprime a lista em ordem inversa. Então,
-- `ls -alSr`{{exec}} o que é mostrado?
+1. Comandos do usuário: Comandos que podem ser usados diretamente no shell.
+2. Chamada de sistema: Funções que fazem chamadas diretas ao kernel do sistema.
+3. Bibliotecas: Funções disponíveis nas bibliotecas do sistema.
+4. Dispositivos: Descrição dos arquivos de dispositivo.
+5. Formatos de arquivos: Descrição dos formatos de arquivo.
+6. Jogos: Jogos e brincadeiras disponíveis no sistema.
+7. Miscelânea: Diversas informações úteis.
+8. Comandos administrativos: Comandos usados por administradores de sistema.
 
-> **Nota:** Em alguns casos (raros) o Sistema Operacional pode distinguir o autor (criador) do proprietário de um arquivo.
+Para acessar uma seção específica, basta especificar o número antes do comando:
 
-### Conclusão
-Dois últimos comandos neste cenário:
+`man 5 passwd`{{exec}}
 
-`ls --version`{{exec}} imprime a versão do aplicativo `ls`{{}}.
-
-Todos os comandos que usamos aqui estão disponíveis na ajuda. Como obter ajuda?
-
-`ls --help`{{exec}}
+Neste exemplo, o comando exibe a página do manual da seção 5 para o arquivo `passwd`, explicando seu formato.

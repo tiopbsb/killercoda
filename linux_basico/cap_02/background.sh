@@ -22,7 +22,8 @@ echo "PROMPT_COMMAND='${PROMPT_COMMAND}'" >> /home/aluno/.bashrc
 
 boas_vindas=$(cat <<EOF
 
-data=\$(date '+%a, %d %b %y, %H:%M BSB')
+clear
+data=\$(date '+%a, %d %b %y, %H:%M UTC')
 
 bold_green='\e[1;32m'
 NC='\e[0m'

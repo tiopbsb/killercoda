@@ -10,7 +10,7 @@ Page Up/Down: Move a página uma tela por vez.
 - n: Vai para a próxima ocorrência da palavra pesquisada.
 - q: Sai da man page.
 
-Acesse o manual do comando `date`{{}}. Procure pela sessão _EXAMPLES_. O segundo exemplo diz como mostrar a hora em qualquer _timezone_. Use para exibir a data-hora com o _timezone_ igual a "America/Sao_Paulo".
+Acesse o manual do comando `date`{{}}. Procure pela sessão _EXAMPLES_. O segundo exemplo diz como mostrar a hora em qualquer _timezone_. Use-o para exibir a data-hora com o _timezone_ igual a "America/Sao_Paulo".
 
 `man date`{{exec}}
 

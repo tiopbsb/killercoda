@@ -18,12 +18,24 @@
 				"text": "step3/step3.md"
 			},
 			{
-				"title": "Ordenando os arquivos",
+				"title": "Navegação",
 				"text": "step4/step4.md"
 			},
 			{
-				"title": "'help' e outras opções",
+				"title": "Explorando o 'man'",
 				"text": "step5/step5.md"
+			},
+			{
+				"title": "Explorando o 'man'",
+				"text": "step5/step6.md"
+			},
+			{
+				"title": "Explorando o 'man'",
+				"text": "step5/step7.md"
+			},
+			{
+				"title": "Explorando o 'man'",
+				"text": "step5/step8.md"
 			}
 		],
 		"finish": {
