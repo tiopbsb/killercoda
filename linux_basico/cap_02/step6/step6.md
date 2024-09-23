@@ -43,7 +43,7 @@ Esse comando exibirá a página de manual da função _printf_ na seção de bib
 `man ls > manual_do_ls.txt`{{exec}}
 
 >**Nota.** Você não precisa de um ambiente Linux para consultar o manual dos comandos.
-
+>
 >Digite no _google_ o manual que deseja (ex.: "[man mkdir](https://www.google.com/search?q=man+mkdir))" e várias opções de sites estarão disponíveis para consulta.
-
+>
 >Entre eles, o [**man7.org**](https://man7.org/linux/man-pages/) e o [**die.net**](https://linux.die.net/man/).
