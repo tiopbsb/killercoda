@@ -11,6 +11,11 @@
       "path": "cap_02", 
       "title": "Capítulo II: man - o seu melhor amigo",
       "description": "O manual dos comandos do Linux" 
+    },
+    { 
+      "path": "cap_03", 
+      "title": "Capítulo III: Trabalhando com diretórios",
+      "description": "Crie, apague e mova através dos diretórios" 
     }
   ]
 }

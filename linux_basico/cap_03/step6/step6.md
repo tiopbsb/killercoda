@@ -32,7 +32,3 @@ Colocando `^`{{}} (ou ainda o `!`{{}}) logo após o colchete de abertura ([^...]
 As chaves são usadas para expandir um conjunto de opções e criar padrões mais complexos. Diferente dos outros coringas, elas não são padrões globais, mas são expandidas pelo próprio shell antes de passar as opções para o comando.
 
 `ls -l arquivo0{2,3}`{{exec}}
-
-Também podemos usar o sequencial `..`{{}} para definir uma sequência.
-
-`ls -l arquivo0{2..4}`{{exec}} é o mesmo que `ls -l arquivo0{2,3,4}`{{}}.
