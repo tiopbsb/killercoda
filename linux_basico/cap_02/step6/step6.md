@@ -12,3 +12,34 @@ Aqui estão algumas opções do comando _man_ que podem ser úteis:
 `--help`{{}}: Exibe as opções de ajuda para o próprio comando man.
 
 `man --help`{{exec}}
+
+### Exemplos práticos
+
+Consultar a página de manual de um comando:
+
+`man grep`{{exec}}
+
+Isso abrirá a página de manual do comando grep, exibindo todas as opções de pesquisa de texto disponíveis.
+
+Procurar man pages por palavras-chave:
+
+`man -k copy`{{exec}}
+
+Isso exibirá uma lista de man pages relacionadas à palavra "copy", como o comando cp para copiar arquivos.
+
+Consultar uma seção específica:
+
+`man 3 printf`{{exec}}
+
+Esse comando exibirá a página de manual da função printf na seção de bibliotecas (seção 3).
+
+### Dicas e Truques
+- Memorize as teclas de navegação: o _man_ usa o _pager less_ por padrão. Aprender as teclas de navegação pode acelerar sua consulta.
+
+- Use `man -k`{{}} para descobrir comandos: se você não souber o comando exato que precisa, a busca por palavra-chave pode ser muito útil.
+
+- Combine _man_ com redirecionamento: Você pode redirecionar a saída de uma _man page_ para um arquivo para posterior leitura:
+
+`man ls > manual_do_ls.txt`{{exec}}
+
+- Você não precisa de um ambiente Linux para consultar o manual dos comandos. Digite no google o manual que deseja (ex.: "[man mkdir](https://www.google.com/search?q=man+mkdir)" e vários opções de sites estarão disponíveis para consulta. Entre eles, o [**man7.org**](https://man7.org/linux/man-pages/) e o [**die.net**](https://linux.die.net/man/).

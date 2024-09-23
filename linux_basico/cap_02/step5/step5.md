@@ -18,4 +18,6 @@ Neste exemplo, o comando exibe a página do manual da seção 5 para o arquivo `
 
 >Quando o parâmetro _sessão_ não é passado, o sistema assume a sessão padrão (1).
 
-Observe a diferença para `man passwd`{{}}
+Observe a diferença para
+
+`man passwd`{{exc}}
