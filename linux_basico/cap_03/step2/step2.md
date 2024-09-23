@@ -1,73 +1,46 @@
-## Como obter mais detalhes
+## Navegando pelo sistema
+Já sabemos o que há dentro de `dir_pai`{{}}. Vamos até lá agora. Para mudar de diretório, precisamos usar o comando `cd`{{}} (_**C**hange **D**irectory_).
 
-Certo. Sabemos como obter a lista de itens de um diretório.
+`cd dir_pai`{{exec}}
 
-Mas isso ainda é pouco informativo. Sim, temos uma visualização; mas sem detalhes.
+`ls`{{exec}}
 
-Antes de aprendermos como obter mais detalhes, há um comando que vamos executar agora para limpar a tela:
+Para saber em que diretótio estamos, usamos o comando `pwd`{{}} (_**P**rint **W**orking **D**irectory_).
 
-`clear`{{exec}} ou `ctrl + l`{{}}
+`pwd`{{exec}}
 
-O que ele faz? Bem, ele limpa a tela.
+Esse comando mostra seu diretório de trabalho atual.
 
-Agora, vamos finalmente aprender mais sobre o comando `ls`{{}}. Aqui está sua SINOPSE:
+Podemos voltar ao diretório anterior digitando:
 
-> **ls** [OPTION]... [FILE]...
+`cd ..`{{exec}}
 
-Note que ele aceita dois tipos de parâmetros:
+>Nota. Lembre-se que o comando `cd ..` nos leva ao **diretório pai** daquele (imediatamente anterior àquele) em que estamos.
 
-- _OPTION_ - são as opções de listagem; e
-- _FILE_ - arquivo ou diretório (neste caso, o seu conteúdo) que se deseja listar.
+Tabém é valido dizer que `cd ..` nos leva à **um nível acima** na cadeia de diretórios.
 
-**Obs.: a ordem dos parâmetros não faz diferença no comando.**
+Ok, onde estamos agora?
 
-Há várias _opções_ para o parâmetro _OPTION_ que podemos adicionar para alterar a saída do comando.
+`pwd`{{exec}}
 
-> Algo importante a entender: 
-> 1. **Parâmetro** é qualquer entrada fornecida ao comando para controlar seu comportamento ou especificar o que ele deve processar.
-> 2. **Opções** (ou _flags_) são modificadores que alteram o comportamento de um comando.
-> 3. **Argumentos** são os itens que o comando vai processar; onde o comando vai atuar, como arquivos, diretórios ou dados.
->
-> Para aprender a trabalhar corretamente com Linux, devemos nomear os elementos com a convenção adequada.
+Vamos nos mover para um diretório mais profundo.
 
-Nosso primeira _opção_ nos dará mais detalhes. Execute:
+`cd dir_pai/dir_filho023`{{exec}}
 
-`ls -l`{{exec}}
+Onde estamos agora?
 
-Aqui o `-`{{}} indica que passaremos opções. Existem duas maneiras de fazer isso:
+`pwd`{{}}
 
-- `-`{{}} Um traço informa ao sistema que vamos passar uma _opção_ de uma letra, como `-a`{{}}.
-- `--`{{}} Dois traços indicam que a _opção_ conterá mais de uma letra, geralmente uma palavra em inglês, como `--all`{{}}.
+Como você pode ver, podemos navegar por vários diretórios, fornecendo-os com `/`{{}} como separador.
 
-O `-l`{{}} significa "formato de listagem longa" (long listing format).
+Como isso funciona? Será explicado na próxima página.
 
-### O que temos aqui?
+Se quisermos voltar ao diretório inicial (aquele de onde começamos), podemos fazer isso da maneira que já conhecemos: `cd ..`{{}} e novamente `cd ..`{{}}, mas isso não é muito prático. Podemos combinar os `..`{{}} da mesma forma que entramos neste diretório:
 
-O formato contém algumas colunas. Vamos tentar entender o que elas representam:
+![Scan results](../images/dir.jpg.jpg)
 
-- Permissões: aqui podemos ver que tipo de permissão o objeto possui. Trabalharemos com permissões... em breve :)
-- Número de links físicos (_hard links_): por padrão, todo objeto tem um _hard link_. O que são links? Vamos aprender isso mais a frente.
-- Proprietário: o dono do arquivo (ou link, ou diretório, etc). Isso não significa quem o criou, mas quem o possui no momento. **No Linux, todo objeto (arquivo, diretório, etc) tem um dono!**.
-- Grupo: O proprietário pertence a um grupo (de usuários). Essa informação também está aqui. Isso significa que nossos "companheiros de grupo" têm acesso específico ao arquivo.
-- Tamanho: O tamanho do arquivo em bytes.
-- Data e hora da última modificação do arquivo.
-- Nome do arquivo.
+`cd ../..`{{}}
 
-Listando o conteúdo do diretório documentos.
+`pwd`{{}}
 
-`ls -l documentos`{{exec}}
-
-Lembre-se que a ordem dos parâmetros não importa.
-
-`ls documentos -l`{{exec}}
-
-### Proprietário e grupo
-Por enquanto, basta saber que na listagem acima vemos os nomes dos usuários e grupos. O sistema mantém e traduz essas informações de representações numéricas. Esses números são o UID (_User Identifier_ ) para o usuário e o GID (_Group Identifier_) para o grupo. Podemos listar essas informações de forma numérica, executando o comando:
-
-`ls -n`{{exec}}
-
-Esse comando funciona como o `ls -l`{{}}, mas ele altera os nomes amigáveis para _UIDs_ e _GIDs_.
-
-> Agora, listamos todos os arquivos em ordem alfabética.
-
- Mas... será mesmo que estamos vendo todos os arquivos?
+Ok, estamos de volta.
