@@ -20,4 +20,4 @@ Neste exemplo, o comando exibe a página do manual da seção 5 para o arquivo `
 
 Observe a diferença para
 
-`man passwd`{{exc}}
+`man passwd`{{exec}}
