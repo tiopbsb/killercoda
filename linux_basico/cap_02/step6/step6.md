@@ -21,17 +21,17 @@ Consultar a página de manual de um comando:
 
 Isso abrirá a página de manual do comando grep, exibindo todas as opções de pesquisa de texto disponíveis.
 
-Procurar man pages por palavras-chave:
+Procurar _man pages_ por palavras-chave:
 
 `man -k copy`{{exec}}
 
-Isso exibirá uma lista de man pages relacionadas à palavra "copy", como o comando cp para copiar arquivos.
+Isso exibirá uma lista de _man pages_ relacionadas à palavra "_copy_", como o comando cp para copiar arquivos.
 
 Consultar uma seção específica:
 
 `man 3 printf`{{exec}}
 
-Esse comando exibirá a página de manual da função printf na seção de bibliotecas (seção 3).
+Esse comando exibirá a página de manual da função _printf_ na seção de bibliotecas (seção 3).
 
 ### Dicas e Truques
 - Memorize as teclas de navegação: o _man_ usa o _pager less_ por padrão. Aprender as teclas de navegação pode acelerar sua consulta.
@@ -42,4 +42,4 @@ Esse comando exibirá a página de manual da função printf na seção de bibli
 
 `man ls > manual_do_ls.txt`{{exec}}
 
-- Você não precisa de um ambiente Linux para consultar o manual dos comandos. Digite no google o manual que deseja (ex.: "[man mkdir](https://www.google.com/search?q=man+mkdir)" e vários opções de sites estarão disponíveis para consulta. Entre eles, o [**man7.org**](https://man7.org/linux/man-pages/) e o [**die.net**](https://linux.die.net/man/).
+> **Nota** Você não precisa de um ambiente Linux para consultar o manual dos comandos. Digite no google o manual que deseja (ex.: "[man mkdir](https://www.google.com/search?q=man+mkdir)" e várias opções de sites estarão disponíveis para consulta. Entre eles, o [**man7.org**](https://man7.org/linux/man-pages/) e o [**die.net**](https://linux.die.net/man/).
