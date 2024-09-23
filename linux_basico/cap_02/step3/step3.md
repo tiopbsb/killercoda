@@ -1,49 +1,10 @@
-## Listar todos os arquivos
+## Estrutura das Man Pages
 
-Talvez você já saiba que existem muitos arquivos e diretórios que são ocultos. Isso geralmente significa que esses objetos não são listados ao usar comandos padrão de listagem ou ainda na visualização padrão em interfaces gráficas - GUI (_Graphical User Interface_). 
+Cada página de manual segue uma estrutura padronizada. Aqui estão algumas das seções mais comuns:
 
-O Linux usa um ponto (.) no início do nome do objeto oculto. Estes arquivos ambém são chamados de _dotfiles_. Ok, vamos listar os arquivos novamente.
-
-`ls`{{exec}}
-
-Humm, será que há arquivos ocultos?
-
-Sim, precisamos encontrar a opção apropriado. Desta vez será `-a`{{}} ou `--all`{{}}.
-
-`ls -a`{{exec}}
-
-Esse comando listou muito mais arquivos do que antes. Muitos _dotfiles_! Não importa o que eles são, pelo menos por enquanto. Mas dois deles precisam ser explicados.
-
-- `.`{{}} 
-- `..`{{}}
-
-O primeiro, `.`{{}} simplesmente significa o diretório atual em que você se encontra.
-
-o segundo, `..`{{}} significa o diretório pai. Ou seja, o diretório que está um nível acima daquele em que você se encontra.
-
-Simples assim :)
-
-> As entradas especiais `.`{{}} e `..`{{}} servem para traçar um caminho relativo de um objeto. Ou seja, o caminho até o objeto, em relação ao diretório em que o usuário se encontra.
-Exemplo: é fácil perceber que o comando `ls .` pode mostrar resultados diferentes infulenciados pelo conteúdo do diretório em que é aplicado.
-
-Então... Vamos tentar algo.
-
-`ls .`{{exec}}
-
-Irá mostrar exatamente a mesma saída que o simples `ls`{{}}. E
-
-`ls ..`{{exec}}
-
-mostra... sim, a estrutura do diretório pai!
-
-O última opção para esta seção é `-A`{{}} (A maiúsculo). Enquanto `-a`{{}} significa "_all_ - todos", `-A`{{}} significa "_almost all_ (quase todos)". Nesse caso, o comando mostrará todos os arquivos, exceto `.`{{}} e `..`{{}}.
-
-Vamos tentar: `ls -A`{{exec}}
-
-Ok, última coisa por agora. Podemos combinar múltiplas opções em um comando. Tente executar:
-
-`ls -al`{{exec}}
-
-> Note que ao selecionar mais de argumento, usa-se apenas um traço `-`{{}} antecedendo-os.
-
-O que você vê?
+1. **NAME:** Nome do comando e uma breve descrição.
+2. **SYNOPSIS:** Mostra como o comando deve ser usado. É importante prestar atenção a essa parte, pois ela explica as opções e parâmetros aceitos pelo comando.
+3. **DESCRIPTION:** Descrição detalhada do que o comando faz.
+4. **OPTIONS**: Lista das opções (flags) disponíveis para o comando, cada uma acompanhada de uma breve explicação.
+5. **EXAMPLES:** Exemplos práticos de como usar o comando no dia a dia.
+6. **SEE ALSO:** Comandos e man pages relacionadas que podem ser úteis.

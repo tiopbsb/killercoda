@@ -6,15 +6,15 @@
 		},
 		"steps": [
 			{
-				"title": "Primeira olhada no comando 'ls'",
+				"title": "Conceito",
 				"text": "step1/step1.md"
 			},
 			{
-				"title": "Obtenha mais informações",
+				"title": "Como usar o 'man'",
 				"text": "step2/step2.md"
 			},
 			{
-				"title": "Liste todos os arquivos",
+				"title": "Estrutura",
 				"text": "step3/step3.md"
 			},
 			{
