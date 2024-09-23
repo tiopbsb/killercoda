@@ -1,17 +1,14 @@
-## Seções do Manual
-As man pages estão divididas em várias seções numeradas, onde cada seção cobre diferentes tipos de documentação. Aqui estão algumas seções principais:
+## Opções úteis do comando _man_
+Aqui estão algumas opções do comando _man_ que podem ser úteis:
 
-Comandos do usuário: Comandos que podem ser usados diretamente no shell.
-Chamada de sistema: Funções que fazem chamadas diretas ao kernel do sistema.
-Bibliotecas: Funções disponíveis nas bibliotecas do sistema.
-Dispositivos: Descrição dos arquivos de dispositivo.
-Formatos de arquivos: Descrição dos formatos de arquivo.
-Jogos: Jogos e brincadeiras disponíveis no sistema.
-Miscelânea: Diversas informações úteis.
-Comandos administrativos: Comandos usados por administradores de sistema.
-Para acessar uma seção específica, basta especificar o número antes do comando:
+`-k palavra`{{}}: Faz uma pesquisa por palavra-chave em todas as man pages. Isso é útil quando você não sabe exatamente o nome do comando que deseja usar.
 
-bash
-Copiar código
-man 5 passwd
-Neste exemplo, o comando exibe a página do manual da seção 5 para o arquivo passwd, explicando seu formato.
+`man -k disk`{{exec}}
+
+`-f comando`{{}}: Mostra um resumo curto sobre um comando (equivalente ao comando _whatis_).
+
+`man -f ls`{{exec}}
+
+`--help`{{}}: Exibe as opções de ajuda para o próprio comando man.
+
+`man --help`{{exec}}

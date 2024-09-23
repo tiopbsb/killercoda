@@ -1,4 +1,4 @@
-## Estrutura das _Man Pages_
+## Estrutura das _man pages_
 
 Cada página de manual segue uma estrutura padronizada. Aqui estão algumas das seções mais comuns:
 

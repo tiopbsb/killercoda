@@ -1,4 +1,4 @@
-## Navegando nas Man Pages
+## Navegando nas _man pages_
 Ao abrir uma página de manual, você estará no modo de leitura. Aqui estão algumas teclas úteis para navegar:
 
 - Setas para cima/baixo: Move a página uma linha por vez.
