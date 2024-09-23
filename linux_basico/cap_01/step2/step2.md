@@ -27,6 +27,7 @@ Há várias _opções_ para o parâmetro _OPTION_ que podemos adicionar para alt
 > 1. **Parâmetro** é qualquer entrada fornecida ao comando para controlar seu comportamento ou especificar o que ele deve processar.
 > 2. **Opções** (ou _flags_) são modificadores que alteram o comportamento de um comando.
 > 3. **Argumentos** são os itens que o comando vai processar; onde o comando vai atuar, como arquivos, diretórios ou dados.
+>
 > Para aprender a trabalhar corretamente com Linux, devemos nomear os elementos com a convenção adequada.
 
 Nosso primeira _opção_ nos dará mais detalhes. Execute:
