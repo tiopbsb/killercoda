@@ -1,18 +1,49 @@
 {
-  "details": {
-    "intro": {
-      "text": "intro.md",
-      "background": "background.sh"
-    },
-    "steps": [
-      {
-        "title": "Open, edit and close a file",
-        "text": "step1/text.md",
-        "verify": "step1/verify.sh"
-      }
-    ]
-  },
-  "backend": {
-    "imageid": "ubuntu"
-  }
+	"details": {
+		"intro": {
+			"text": "intro.md",
+			"background": "background.sh"
+		},
+		"steps": [
+			{
+				"title": "Primeira olhada no comando 'ls'",
+				"text": "step1/step1.md"
+			},
+			{
+				"title": "Obtenha mais informações",
+				"text": "step2/step2.md"
+			},
+			{
+				"title": "Liste todos os arquivos",
+				"text": "step3/step3.md"
+			},
+			{
+				"title": "Ordenando os arquivos",
+				"text": "step4/step4.md"
+			},
+			{
+				"title": "'help' e outras opções",
+				"text": "step5/step5.md"
+			},
+			{
+				"title": "Os coringas do Linux",
+				"text": "step6/step6.md"
+			},
+			{
+				"title": "Teste seus conhecimentos",
+				"text": "step7/step7.md"
+			},
+			{
+				"title": "Prova final",
+				"text": "step8/step8.md",
+				"verify": "step8/verify.sh"
+			}
+		],
+		"finish": {
+			"text": "fim.md"
+		}
+	},
+	"backend": {
+		"imageid": "ubuntu"
+	}
 }

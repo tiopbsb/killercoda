@@ -30,13 +30,13 @@ Bem, de quebra, aprendemos um novo comando - `date`{{}}. Basta dizer que esse co
 
 `date`{{exec}}
 
-A primeira opção de ordenação será `-t`{{}}. Esse argumento ordena os arquivos pelo tempo da última modificação, com os arquivos mais recentes aparecendo primeiro.
+A primeira _opção_ de ordenação será `-t`{{}}. Essa _opção_ ordena os arquivos pelo tempo da última modificação, com os arquivos mais recentes aparecendo primeiro.
 
 Vamos tentar:
 
 `ls -lt`{{exec}}
 
-Usamos dois argumentos para observar melhor as coisas. Podemos especificar exatamente o tempo de modificação adicionando `u`{{}} à lista de argumentos. Mas, por favor, lembre-se de que, para imprimir essa informação corretamente, você deve usar `t`{{}} com outro argumento (neste caso, `u`{{}}).
+Usamos duas opções para observar melhor as coisas. Podemos especificar exatamente o tempo de modificação adicionando `u`{{}} à lista de opções. Mas, por favor, lembre-se de que, para imprimir essa informação corretamente, você deve usar `t`{{}} com outra opção (neste caso, `u`{{}}).
 
 `ls -ltu`{{exec}}
 
@@ -78,7 +78,7 @@ Primeiro, executamos este comando:
 
 `ls -s`{{exec}} ('s' minúsculo)
 
-Isso mostra uma lista curta dos arquivos e o espaço alocado. Como já sabemos, podemos combinar esse argumento, `-s`{{}}, com outros. Vamos fazer isso:
+Isso mostra uma lista curta dos arquivos e o espaço alocado. Como já sabemos, podemos combinar essa _opção_, `-s`{{}}, com outros. Vamos fazer isso:
 
 `ls -ls`{{exec}}
 
@@ -88,18 +88,18 @@ Por que usamos `s`{{}}? Eu queria que você prestasse atenção aqui. Quando usa
 
 `ls -lS`{{exec}} isso ordena os arquivos por tamanho, começando pelos maiores.
 
-> **Então, os argumentos são sensíveis a maiúsculas e minúsculas, como... tudo no Linux.**
+> **Então, as opções são sensíveis a maiúsculas e minúsculas, como... tudo no Linux.**
 
-Antes de usarmos o próximo comando, há um argumento a mais que precisamos aprender. Esse argumento é `--human-readable`{{}}, ou melhor, `-h`{{}}.
+Antes de usarmos o próximo comando, há uma opção a mais que precisamos aprender. Essa _opção_ é `--human-readable`{{}}, ou melhor, `-h`{{}}.
 
 Vamos tentar:
 
 `ls -lh`{{exec}} isso imprime o tamanho dos arquivos não em bytes, mas de forma mais legível, com K (KiloByte), M (MegaByte), ou G (GigaByte).
 
-O `h`{{}} usa potências de 1024. Então, 1K é 1 elevado a 1024. Temos outra opção:
+O `h`{{}} usa potências de 1024. Então, 1K é 1 elevado a 1024. Temos outra _opção_:
 
 `ls -l --si`{{exec}} que usa potências de 1000. Mas... acho que ninguém usa isso. :)
 
-Ok, vamos tentar ordenar com o argumento `h`{{}}:
+Ok, vamos tentar ordenar com a _opção_ `h`{{}}:
 
 `ls -lSh`{{exec}}

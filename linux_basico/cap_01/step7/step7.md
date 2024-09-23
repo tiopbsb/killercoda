@@ -7,14 +7,14 @@ Q1: Qual é o comando completo para mostrar uma lista formatada longa dos arquiv
 ls -l
 </details><br>
 
-Q2: Qual é o argumento para ordenar arquivos?
+Q2: Qual é a _opção_ para ordenar arquivos?
 
 <details>
 <summary>Resposta</summary>
 S
 </details><br>
 
-Q3: Quero passar o argumento de `color`{{}}. O que preciso usar?
+Q3: Quero passar a _opção_ de `color`{{}}. O que preciso usar?
 
 1. `--`
 2. `-`
@@ -43,7 +43,7 @@ Q5: Quero listar os arquivos do diretório pai. O que preciso adicionar ao meu c
 ..
 </details><br>
 
-Q6: Tenho o comando `ls -lt`{{}}. Qual argumento preciso adicionar para ver a lista ordenada pela modificação do conteúdo dos arquivos?
+Q6: Tenho o comando `ls -lt`{{}}. Qual _opção_ preciso adicionar para ver a lista ordenada pela modificação do conteúdo dos arquivos?
 <details>
 <summary>Resposta</summary>
 u

@@ -8,7 +8,7 @@ O Linux usa um ponto (.) no início do nome do objeto oculto. Estes arquivos amb
 
 Humm, será que há arquivos ocultos?
 
-Sim, precisamos encontrar o argumento apropriado. Desta vez será `-a`{{}} ou `--all`{{}}.
+Sim, precisamos encontrar a _opção_ apropriada. Desta vez será `-a`{{}} ou `--all`{{}}.
 
 `ls -a`{{exec}}
 
@@ -36,14 +36,14 @@ Irá mostrar exatamente a mesma saída que o simples `ls`{{}}. E
 
 mostra... sim, a estrutura do diretório pai!
 
-O último argumento para esta seção é `-A`{{}} (A maiúsculo). Enquanto `-a`{{}} significa "_all_ - todos", `-A`{{}} significa "_almost all_ (quase todos)". Nesse caso, o comando mostrará todos os arquivos, exceto `.`{{}} e `..`{{}}.
+A última _opção_ para esta seção é `-A`{{}} (A maiúsculo). Enquanto `-a`{{}} significa "_all_ - todos", `-A`{{}} significa "_almost all_ (quase todos)". Nesse caso, o comando mostrará todos os arquivos, exceto `.`{{}} e `..`{{}}.
 
 Vamos tentar: `ls -A`{{exec}}
 
-Ok, última coisa por agora. Podemos combinar múltiplos argumentos em um comando. Tente executar:
+Ok, última coisa por agora. Podemos combinar múltiplas opções em um comando. Tente executar:
 
 `ls -al`{{exec}}
 
-> Note que ao selecionar mais de argumento, usa-se apenas um traço `-`{{}} antecedendo-os.
+> Note que ao selecionar mais de uma _opção_, usa-se apenas um traço `-`{{}} antecedendo-os.
 
 O que você vê?

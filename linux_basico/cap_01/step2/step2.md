@@ -10,7 +10,7 @@ Antes de aprendermos como obter mais detalhes, há um comando que vamos executar
 
 O que ele faz? Bem, ele limpa a tela.
 
-Agora, vamos finalmente aprender mais sobre o comando `ls`{{}}. Aqui está sua SINTAXE:
+Agora, vamos finalmente aprender mais sobre o comando `ls`{{}}. Aqui está sua SINOPSE:
 
 > **ls** [OPTION]... [FILE]...
 
@@ -21,18 +21,22 @@ Note que ele aceita dois tipos de parâmetros:
 
 **Obs.: a ordem dos parâmetros não faz diferença no comando.**
 
-Há vários argumentos para o parâmetro _OPTION_ que podemos adicionar para alterar a saída do comando.
+Há várias _opções_ para o parâmetro _OPTION_ que podemos adicionar para alterar a saída do comando.
 
-> Algo importante a entender: o que passamos após o comando são **argumentos**. Não são chaves, parâmetros, etc. Podemos ouvir esses termos, mas, para aprender a trabalhar corretamente com Linux, devemos nomear os elementos com a convenção adequada.
+> Algo importante a entender: 
+> 1. **Parâmetro** é qualquer entrada fornecida ao comando para controlar seu comportamento ou especificar o que ele deve processar.
+> 2. **Opções** (ou _flags_) são modificadores que alteram o comportamento de um comando.
+> 3. **Argumentos** são os itens que o comando vai processar; onde o comando vai atuar, como arquivos, diretórios ou dados.
+> Para aprender a trabalhar corretamente com Linux, devemos nomear os elementos com a convenção adequada.
 
-Nosso primeiro argumento nos dará mais detalhes. Execute:
+Nosso primeira _opção_ nos dará mais detalhes. Execute:
 
 `ls -l`{{exec}}
 
-Aqui o `-`{{}} indica que passaremos argumentos. Existem duas maneiras de fazer isso:
+Aqui o `-`{{}} indica que passaremos opções. Existem duas maneiras de fazer isso:
 
-- `-`{{}} Um traço informa ao sistema que vamos passar um argumento de uma letra, como `-a`{{}}.
-- `--`{{}} Dois traços indicam que o argumento conterá mais de uma letra, geralmente uma palavra em inglês, como `--all`{{}}.
+- `-`{{}} Um traço informa ao sistema que vamos passar uma _opção_ de uma letra, como `-a`{{}}.
+- `--`{{}} Dois traços indicam que a _opção_ conterá mais de uma letra, geralmente uma palavra em inglês, como `--all`{{}}.
 
 O `-l`{{}} significa "formato de listagem longa" (long listing format).
 
