@@ -23,7 +23,7 @@ Confirme se deu certo com `ls -l`{{}}.
 
 Ok, outra abordagem.
 
-`mkdir meu_dir outro_dir terceiro_dir`
+`mkdir meu_dir outro_dir terceiro_dir`{{exec}}
 
 Isso cria três diretórios diferentes.
 
@@ -34,7 +34,7 @@ Para criar uma estrutura mais profunda, temos que usar a opção `-p`{{}}. Isso 
 
 `mkdir -p dir_pai/dir_filho{01..100}`{{exec}}
 
-O que fizemos aqui? Com `-p`{{}} permitimos que o sistema crie o diretório pai, e a segunda parte já conhecemos. Sob o _dir_pai_, criamos 100 diretórios, de _dir_filho001_ até _dir_filho100_. Observe como o sistema formatou isso de maneira conveniente! Especificamos 01, e o sistema criou diretórios mantendo três dígitos, como em childdir100. Muito legal.
+O que fizemos aqui? Com `-p`{{}} permitimos que o sistema crie o diretório pai, e a segunda parte já conhecemos. Sob o _dir_pai_, criamos 100 diretórios, de _dir_filho001_ até _dir_filho100_. Observe como o sistema formatou isso de maneira conveniente! Especificamos 01, e o sistema criou diretórios mantendo três dígitos, como em dir_filho100. Bem inteligente da parte dele.
 
 Vamos ver o que criamos.
 
