@@ -37,10 +37,10 @@ Como isso funciona? Será explicado na próxima página.
 
 Se quisermos voltar ao diretório inicial (aquele de onde começamos), podemos fazer isso da maneira que já conhecemos: `cd ..`{{}} e novamente `cd ..`{{}}, mas isso não é muito prático. Podemos combinar os `..`{{}} da mesma forma que entramos neste diretório:
 
-![Scan results](../images/dir.jpg.jpg)
+![Scan results](../images/dir.jpg)
 
-`cd ../..`{{}}
+`cd ../..`{{exec}}
 
-`pwd`{{}}
+`pwd`{{exec}}
 
 Ok, estamos de volta.
