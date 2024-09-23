@@ -24,19 +24,6 @@
 			{
 				"title": "'help' e outras opções",
 				"text": "step5/step5.md"
-			},
-			{
-				"title": "Os coringas do Linux",
-				"text": "step6/step6.md"
-			},
-			{
-				"title": "Teste seus conhecimentos",
-				"text": "step7/step7.md"
-			},
-			{
-				"title": "Prova final",
-				"text": "step8/step8.md",
-				"verify": "step8/verify.sh"
 			}
 		],
 		"finish": {
