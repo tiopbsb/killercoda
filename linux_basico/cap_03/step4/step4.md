@@ -55,6 +55,13 @@ E, finalmente, a versão mais curta...
 Sim, apenas `cd`{{}} (sem qualquer argumento) é o suficiente para voltar ao _diretório home_.
 
 ### Um extra sore variáveis e o comando echo.
+Definimos uma variável asim:
+
+`nome_da_variavel="conteudo_da_variável"`
+
+>**Obs.:**
+>1. É importante obserar que não há espaços antes e depois do '**=**'. O nome da variável é 'colado' no '**=**' que é colocado no valor do conteúdo.
+>2. Se o valor do conteúdo for numérico, não precis estar entre aspas.
 
 ```
 nome="Carlos"
