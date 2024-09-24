@@ -1,7 +1,10 @@
 ## Deletar diretórios
-O comando para se deletar um diretório é o `rmdir`{{}} (**R**e**M**ove **DIR**ectory). Eis sua sintaxe (ou sinopse):
+O comando para se deletar um diretório é o `rmdir`{{}} (**R**e**M**ove **DIR**ectory).
 
+>**Sintaxe:**
 >rmdir [OPTION]... DIRECTORY...
+> - OPTION: opções docomando (opcional).
+> - DIRECTORY: o nome do diretório.
 
 **Obs.:** Saiba que tudo o que aparece entre colchetes ([ ]) na sintaxe de um comando, é opcional.
 
@@ -15,7 +18,7 @@ Vamos voltar para o diretório _home_.
 
 Primeiro, vamos remover o diretório root.
 
-``rmdir root``{{exec}}
+`rmdir root`{{exec}}
 
 Agora, vamos remover todos os diretórios testdir.
 
@@ -27,48 +30,39 @@ Ok, agora vamos remover o diretório _dir_pai_.
 
 `rmdir dir_pai`{{exec}}
 
-Hmm. Não conseguimos! O diretório não está vazio. Ok, temos uma solução. Você se lembra do argumento -p do comando mkdir?
+Hmm. Não conseguimos! Como você pôde perceber na mensagem enviada pelo sistema, o diretório não está vazio.
 
-rmdir -p parentdir
+`rmdir: failed to remove 'dir_pai': Directory not empty`{{}}
 
-Também não funcionou!
+Então só podemos remover diretórios vazios?
 
-Temos um diretório chamado maindir, vamos dar uma olhada dentro.
+Com este comando, SIM!
 
-`ls maindir`{{exec}}
+Para remover diretórios não vazios e todo o seu conteúdo, precisaremos de outro comando: o `rm`{{}} (**R**e**M**ove).
 
-Podemos remover o diretório pai (parentdir) apenas quando ele estiver vazio. Isso funcionará então:
+ >**Sintaxe:**
+ >rm [OPTION]... [FILE]...
+ > - OPTION: opções do comando
+ > - FILE: nome do arquivo a ser apagado.
 
-`rmdir -p maindir/childdir`{{exec}}
+`rmdir dir_pai`{{exec}}
 
-Para remover todo o diretório parentdir, precisamos usar um comando diferente, o rm. Este comando funciona para arquivos. E como tudo no Linux é um arquivo, ele deve funcionar para diretórios também.
+Ooops! `rm: cannot remove 'dir_pai': Is a directory`{{}}
 
-`rm parentdir`{{exec}}
+Ele etá dizendo que _dir_pai_ é um diretório! 
 
-Mas... não funcionou.
+Isso mesmo. Este comando, a princípio, seria usado para arquivos. Mas como tudo no Linux são arquivos, ele vai servir para deletar diretórios também. No entanto, para tal, precisamos fazer uso de duas opções:
 
-Ok, vamos tentar isso:
+> - `-f`{{}}, `--force`{{}} ignora arquivos ixexistentes e não pede confirmação para apagar.
+> - `-r`{{}}, `-R`{{}}, `--recursive`{{}} remove o diretório e seu conteúdo recursivamente.
 
-`rmdir parentdir/*`{{exec}}
+Agora vamos tentar...
 
-`rmdir parentdir`{{exec}}
+`rm -rf dir_pai`{{exec}}
 
-Hmm... Se parece que o Linux inteligente não deveria funcionar assim...
+Uau!!! Funcionou... Mas você percebe o poder deste comando?
 
-Você está certo.
-
-Temos outro diretório anotherparentdir com a mesma estrutura. Vamos fazer isso corretamente. E de forma arriscada.
-
-`rm -rf anotherparentdir`{{exec}}
-
-Uau, isso funcionou! Mas... Não funcionou com o rm anteriormente.
-
-Agora usamos alguns argumentos:
-
--r significa percorrer recursivamente os diretórios (e tratar tudo como arquivo).
--f significa forçar. Em outras palavras, não perguntar, assumir que o usuário sabe o que está fazendo.
-
-E é por isso que este é um comando arriscado.
+>`rm -rf DIR`{{}} Apaga **TODO** o conteúdo do diretório _DIR_. **Sem confirmação**! Ao executar este comando, esteja certo do que está fazendo, pois **não há** CTRL+Z que trará seu diretório de volta.
 
 Tente:
 

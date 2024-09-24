@@ -6,6 +6,11 @@ Primeiro, vamos verificar o que temos no nosso diretório atual.
 
 Para criar um diretório, precisamos usar o comando `mkdir`{{}} (_**M**a**K**e **DIR**ectory_).
 
+>**Sintaxe:**
+>mkdir [OPTION]... DIRECTORY...
+> - OPTION: opções do comando (opcional).
+> - DIRECTORY: nome do diretório.
+
 Ok, vamos criar uma estrutura.
 
 `mkdir meudir`{{exec}} cria um diretório com o nome fornecido.
