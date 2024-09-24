@@ -1,20 +1,77 @@
-## Mais algumas opções
-Para finalizar, algumas opções úteis. Dê uma olhada nesles:
+## Deletar diretórios
+O comando para se deletar um diretório é o `rmdir`{{}} (**R**e**M**ove **DIR**ectory). Eis sua sintaxe (ou sinopse):
 
-- `ls -al --author`{{exec}} imprime o nome de usuário do autor do arquivo.
-- `ls -ld`{{exec}} imprime o nome do diretório ao invés de seu conteúdo. Ex.: `ls -ld planilhas`{{exec}}.
-- `ls -ali`{{exec}} imprime inodes (haverá uma lição sobre inodes).
-- `ls -alR`{{exec}} imprime recursivamente todos os subdiretórios.
-- `ls -alr`{{exec}} imprime a lista em ordem inversa. Então,
-- `ls -alSr`{{exec}} o que é mostrado?
+>rmdir [OPTION]... DIRECTORY...
 
-> **Nota:** Em alguns casos (raros) o Sistema Operacional pode distinguir o autor (criador) do proprietário de um arquivo.
+**Obs.:** Saiba que tudo o que aparece entre colchetes ([ ]) na sintaxe de um comando, é opcional.
 
-### Conclusão
-Dois últimos comandos neste cenário:
+Vamos voltar para o diretório _home_.
 
-`ls --version`{{exec}} imprime a versão do aplicativo `ls`{{}}.
+`cd`{{exec}}
 
-Todos os comandos que usamos aqui estão disponíveis na ajuda. Como obter ajuda?
+`pwd`{{exec}}
 
-`ls --help`{{exec}}
+`ls`{{exec}}
+
+Primeiro, vamos remover o diretório root.
+
+``rmdir root``{{exec}}
+
+Agora, vamos remover todos os diretórios testdir.
+
+`rmdir testdir{1..10}`{{exec}}
+
+Sim, podemos usar a mesma sintaxe que usamos para criar esses diretórios :)
+
+Ok, agora vamos remover o diretório _dir_pai_.
+
+`rmdir dir_pai`{{exec}}
+
+Hmm. Não conseguimos! O diretório não está vazio. Ok, temos uma solução. Você se lembra do argumento -p do comando mkdir?
+
+rmdir -p parentdir
+
+Também não funcionou!
+
+Temos um diretório chamado maindir, vamos dar uma olhada dentro.
+
+`ls maindir`{{exec}}
+
+Podemos remover o diretório pai (parentdir) apenas quando ele estiver vazio. Isso funcionará então:
+
+`rmdir -p maindir/childdir`{{exec}}
+
+Para remover todo o diretório parentdir, precisamos usar um comando diferente, o rm. Este comando funciona para arquivos. E como tudo no Linux é um arquivo, ele deve funcionar para diretórios também.
+
+`rm parentdir`{{exec}}
+
+Mas... não funcionou.
+
+Ok, vamos tentar isso:
+
+`rmdir parentdir/*`{{exec}}
+
+`rmdir parentdir`{{exec}}
+
+Hmm... Se parece que o Linux inteligente não deveria funcionar assim...
+
+Você está certo.
+
+Temos outro diretório anotherparentdir com a mesma estrutura. Vamos fazer isso corretamente. E de forma arriscada.
+
+`rm -rf anotherparentdir`{{exec}}
+
+Uau, isso funcionou! Mas... Não funcionou com o rm anteriormente.
+
+Agora usamos alguns argumentos:
+
+-r significa percorrer recursivamente os diretórios (e tratar tudo como arquivo).
+-f significa forçar. Em outras palavras, não perguntar, assumir que o usuário sabe o que está fazendo.
+
+E é por isso que este é um comando arriscado.
+
+Tente:
+
+`rm -rf /`{{exec}}
+
+**E leia a notificação**. Hoje em dia, o Linux tenta ser cuidadoso com seus usuários e este comando. Você entende o porquê?
