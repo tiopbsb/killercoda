@@ -34,7 +34,7 @@ Q6: Quero navegar para diretório _app/tests_ que está dentro do meu _diretóri
 Q7: Quero criar 100 diretórios nomeados de hello001 a hello100. Qual é o comando?
 
 <details> <summary>Resposta</summary> mkdir hello{001..100} </details><br>
-Q8: Para remover todos os diretórios de /directory, eu tenho que executar (não use o comando rm):
+Q8: Para remover todos os diretórios de /directory, eu tenho que executar (não use o comando `rm`{{}}):
 
 <details> <summary>Resposta</summary> rmdir /directory/* </details><br>
 Q9: Como remover tudo sem confirmação de /mydir/somedir? Considere que você está em /mydir e somedir também deve ser removido (não use o caminho absoluto).

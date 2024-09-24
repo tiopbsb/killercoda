@@ -9,7 +9,7 @@ Vamos até um diretório qualquer...
 
 Primeiro, se você se lembra do caminho do seu diretório _home_, use-o:
 
-`cd /home/aluno`{{exec}}
+`cd /root`{{exec}}
 
 `pwd`{{exec}}
 
@@ -17,7 +17,7 @@ Mas essa não é a maneira mais divertida de fazer isso.
 
 Existe uma variável interna chamada $HOME. Essa variável contém o caminho para o _diretório home_ do usuário atual.
 
-`cd /var/log`{{exec}}
+`cd /etc/apt`{{exec}}
 
 `pwd`{{exec}}
 
@@ -29,7 +29,7 @@ Existe uma variável interna chamada $HOME. Essa variável contém o caminho par
 
 Mas _$HOME_ é longo. Podemos usar algo mais curto - `~`{{}}
 
-`cd /var/log`{{exec}}
+`cd /lib/lsb`{{exec}}
 
 `pwd`{{exec}}
 
@@ -44,7 +44,7 @@ Mas _$HOME_ é longo. Podemos usar algo mais curto - `~`{{}}
 
 E, finalmente, a versão mais curta...
 
-`cd /var/log`{{exec}}
+`ls /usr/share/alsa`{{exec}}
 
 `pwd`{{exec}}
 

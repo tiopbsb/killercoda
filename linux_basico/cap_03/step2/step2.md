@@ -23,9 +23,9 @@ Podemos voltar ao diretório anterior digitando:
 
 `cd ..`{{exec}}
 
->Nota. Lembre-se que o comando `cd ..` nos leva ao **diretório pai** daquele (imediatamente anterior àquele) em que estamos.
+>Nota. Lembre-se que o comando `cd ..`{{}} nos leva ao **diretório pai** daquele (imediatamente anterior àquele) em que estamos.
 
-Tabém é valido dizer que `cd ..` nos leva à **um nível acima** na cadeia de diretórios.
+Tabém é valido dizer que `cd ..`{{}} nos leva à **um nível acima** na cadeia de diretórios.
 
 Ok, onde estamos agora?
 
@@ -37,7 +37,7 @@ Vamos nos mover para um diretório mais profundo.
 
 Onde estamos agora?
 
-`pwd`{{}}
+`pwd`{{exec}}
 
 Como você pode ver, podemos navegar por vários diretórios, fornecendo-os com `/`{{}} como separador.
 

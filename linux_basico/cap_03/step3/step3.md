@@ -34,7 +34,7 @@ Onde estamos agora?
 
 `pwd`{{exec}}
 
-Qual é a diferença? Obviamente, você percebeu o caractere `/`{{}}. O que isso tudo significa?
+Qual é a diferença? Obviamente, você percebeu o caractere `/`{{}} no comando `cd`{{}} executado. O que isso tudo significa?
 
 Nos sistemas de arquivos do Linux (ou melhor, em qualquer sistema _Linux-like_), o _root_ (a "primeira referência") é o diretório **raiz**. Esse diretório raiz é representado por `/`{{}}. Tudo o que está no nível mais alto do sistema de arquivos está no diretório /.
 

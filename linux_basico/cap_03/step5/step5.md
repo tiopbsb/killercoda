@@ -26,7 +26,7 @@ Agora, vamos remover todos os diretórios testdir.
 
 Sim, podemos usar a mesma sintaxe que usamos para criar esses diretórios :)
 
-Ok, agora vamos remover o diretório _dir_pai_.
+Ok, agora vamos tentar remover o diretório _dir_pai_.
 
 `rmdir dir_pai`{{exec}}
 
@@ -40,12 +40,12 @@ Com este comando, SIM!
 
 Para remover diretórios não vazios e todo o seu conteúdo, precisaremos de outro comando: o `rm`{{}} (**R**e**M**ove).
 
- >**Sintaxe:**
- >rm [OPTION]... [FILE]...
- > - OPTION: opções do comando
- > - FILE: nome do arquivo a ser apagado.
+>**Sintaxe:**
+>rm [OPTION]... [FILE]...
+> - OPTION: opções do comando
+> - FILE: nome do arquivo a ser apagado.
 
-`rmdir dir_pai`{{exec}}
+`rm dir_pai`{{exec}}
 
 Ooops! `rm: cannot remove 'dir_pai': Is a directory`{{}}
 
@@ -64,8 +64,18 @@ Uau!!! Funcionou... Mas você percebe o poder deste comando?
 
 >`rm -rf DIR`{{}} apaga **TODO** o conteúdo do diretório _DIR_. **Sem confirmação**! Ao executar este comando, esteja certo do que está fazendo, pois **não há** CTRL+Z que trará seu diretório de volta.
 
-Tente:
+Agora tente:
 
 `rm -rf /`{{exec}}
 
 **E leia a notificação**. Hoje em dia, o Linux tenta ser cuidadoso com seus usuários e este comando. Você entende o porquê?
+
+Vamos restaurar o diretório _dir_pai_.
+
+`mkdir -p dir_pai/dir_filho{01..100}`{{exec}}
+
+O que você acha que acontecerá ao executarmos
+
+`rmdir dir_pai/*`{{exec}} ?
+
+É fácil interpretar: todos os diretórios (**vazios**) dentro de _dir_pai_ serão deletados!
