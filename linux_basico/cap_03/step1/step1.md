@@ -24,6 +24,8 @@ Vamos criar 10 diretórios, começando com testdir1 até testdir10. Como fazer i
 mkdir testdir{1..10}
 </details><br>
 
+>É importante executar esta tarefa para as aulas futuras.
+
 Confirme se deu certo com `ls -l`{{}}.
 
 Ok, outra abordagem.

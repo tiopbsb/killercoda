@@ -4,13 +4,9 @@
 
 >No Linux há um usuário chamado **root**, que é o administrador do sistema. Seu _diretório home_ é o `/root`{{}}
 
-Digite o comando abaixo (sem se preocupar com seu significado agora) para ficarmos logado com o usuário _root_.
-
-`exit`{{exec}}
-
 Confirme em qual diretório você se encontra:
 
- `pwd`{{exec}}
+`pwd`{{exec}}
 
 Ok, agora vamos criar mais um diretório:
 
@@ -55,6 +51,8 @@ Suponha que eu esteja no diretório **/home/user2/dir1** (_X_). Se eu quiser ir 
 
 - `cd ../../../var/log/nginx`{{}}
 - `cd /var/log/nginx`{{}}
+
+>Pratique o exercício acima.
 
 Qual é a diferença? Na segunda versão, estamos usando o caminho absoluto. Estamos referenciando nossa navegação pelos diretórios ao ponto principal do sistema - o _root_ (/). Quando colocamos `/`{{}} no início do caminho, isso informa ao sistema que estamos usando um caminho absoluto.
 

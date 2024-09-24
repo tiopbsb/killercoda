@@ -55,9 +55,6 @@ EOF
 )
 
 # Adicionar conteúdo ao final do .bashrc do aluno
-echo "$boas_vindas" >> /home/aluno/.bashrc
-
-# prepara login como 'aluno'
-echo "sudo su - aluno" >> /root/.bashrc
+echo "$boas_vindas" >> /root/.bashrc
 
 exit 0
