@@ -8,15 +8,15 @@ Digite o comando abaixo (sem se preocupar com seu significado agora) para ficarm
 
 `exit`{{exec}}
 
-O comando `cd`{{exec}} (sem argumento) nos leva ao _diretório home_ (do usuário logado, claro).
+Confirme em qual diretório você se encontra:
 
-Vá para o _diretório home_ e em seguida confirme qual é com `pwd`{{exec}}.
+ `pwd`{{exec}}
 
 Ok, agora vamos criar mais um diretório:
 
 `mkdir root`{{exec}}
 
-Criamos o diretório root. Agora vamos para ele:
+Criamos o diretório `root`{{}}. Agora vamos para ele:
 
 `cd root`{{exec}}
 
