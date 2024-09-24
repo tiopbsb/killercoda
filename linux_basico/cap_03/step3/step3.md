@@ -1,12 +1,12 @@
 ## Um pouco mais de teoria
 
->**_Diretório home_** de um usuário é o diretório que o usuário ganha ao ter sua conta criada no sistema. Normalmente `_/home/nome-do-usuário_`{{}}.
+>**_Diretório home_** de um usuário é o diretório que o usuário ganha ao ter sua conta criada no sistema. Normalmente `/home/nome-do-usuário`{{}}.
 
 >No Linux há um usuário chamado **root**, que é o administrador do sistema. Seu _diretório home_ é o `/root`{{}}
 
 Digite o comando abaixo (sem se preocupar com seu significado agora) para ficarmos logado com o usuário _root_.
 
-`exit`{{}}
+`exit`{{exec}}
 
 O comando `cd`{{exec}} (sem argumento) nos leva ao _diretório home_ (do usuário logado, claro).
 
@@ -44,20 +44,29 @@ Nos sistemas de arquivos do Linux (ou melhor, em qualquer sistema _Linux-like_),
 
 >Então nós temos:
 >1. Um usuário _root_;
->2, O _diretório home_ do usuário _root_ que é _/root_; e
+>2. O _diretório home_ do usuário _root_ que é _/root_; e
 >3. A raiz do sistema de arquivos que se chama também _root_.
 
 Vamos dar uma olhada na imagem abaixo.
 
-![Scan results](../images/tree.jpg)
+![Scan results](../images/tree.png)
 
-Suponha que eu esteja no diretório **/home/user2/dir1**. Se eu quiser ir para o diretório **/var/log/nginx**, posso fazer isso de várias maneiras:
+Suponha que eu esteja no diretório **/home/user2/dir1** (_X_). Se eu quiser ir para o diretório **/var/log/nginx** (_Y_), posso fazer isso de duas maneiras:
 
-. `cd ../../../var/log/nginx`{{}}
-. `cd /var/log/nginx`{{}}
+- `cd ../../../var/log/nginx`{{}}
+- `cd /var/log/nginx`{{}}
 
 Qual é a diferença? Na segunda versão, estamos usando o caminho absoluto. Estamos referenciando nossa navegação pelos diretórios ao ponto principal do sistema - o _root_ (/). Quando colocamos `/`{{}} no início do caminho, isso informa ao sistema que estamos usando um caminho absoluto.
 
 No primeiro exemplo, usamos um caminho relativo. Isso significa que estamos navegando a partir da nossa posição atual.
 
-Resumindo, ao digitar `cd /root{{}}` você estrará no diretório _root_ que se encontra na raiz do sistema de arquivos. Ao digitar `cd root`{{}} você entrará no diretório `root` que está dentro do diretório em você se encontra.
+E agora, estando em **/var/log/nginx** (_Y_), como faríamos para chegar em **/var/log/audit** (_Z_) usando caminho relativo?
+
+<details>
+<summary>Tente fazer olhar a resposta resposta</summary>
+<span style='font-family: monospace;padding: 3px; background: yellow;'>
+cd ../audit
+</span>
+</details><br>
+
+Resumindo, ao digitar `cd /root`{{}} você estrará no diretório _root_ que se encontra na raiz do sistema de arquivos. Ao digitar `cd root`{{}} você entrará no diretório `root` que está dentro do diretório em você se encontra.
