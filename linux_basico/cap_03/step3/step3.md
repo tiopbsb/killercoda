@@ -63,10 +63,11 @@ No primeiro exemplo, usamos um caminho relativo. Isso significa que estamos nave
 E agora, estando em **/var/log/nginx** (_Y_), como faríamos para chegar em **/var/log/audit** (_Z_) usando caminho relativo?
 
 <details>
-<summary>Tente fazer olhar a resposta resposta</summary>
-<span style='font-family: monospace;padding: 3px; background: yellow;'>
+<summary>Tente fazer olhar a resposta</summary>
+<i style='font-family: monospace;padding: 3px; background: antiquewhite;'>
+```bash
 cd ../audit
-</span>
+</i>
 </details><br>
 
 Resumindo, ao digitar `cd /root`{{}} você estrará no diretório _root_ que se encontra na raiz do sistema de arquivos. Ao digitar `cd root`{{}} você entrará no diretório `root` que está dentro do diretório em você se encontra.
