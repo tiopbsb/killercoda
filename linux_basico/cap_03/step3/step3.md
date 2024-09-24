@@ -42,10 +42,10 @@ Qual é a diferença? Obviamente, você percebeu o caractere `/`{{}}. O que isso
 
 Nos sistemas de arquivos do Linux (ou melhor, em qualquer sistema _Linux-like_), o _root_ (a "primeira referência") é o diretório **raiz**. Esse diretório raiz é representado por `/`{{}}. Tudo o que está no nível mais alto do sistema de arquivos está no diretório /.
 
->Então nós temos:
->1. Um usuário _root_;
->2. O _diretório home_ do usuário _root_ que é _/root_; e
->3. A raiz do sistema de arquivos que se chama também _root_.
+>Não confunda... Nós temos:
+>1. Um usuário **_root_**;
+>2. O _diretório home_ do usuário _root_ que é **_/root_**; e
+>3. A raiz do sistema de arquivos que também se chama **_root_**.
 
 Vamos dar uma olhada na imagem abaixo.
 
@@ -63,7 +63,7 @@ No primeiro exemplo, usamos um caminho relativo. Isso significa que estamos nave
 E agora, estando em **/var/log/nginx** (_Y_), como faríamos para chegar em **/var/log/audit** (_Z_) usando caminho relativo?
 
 <details>
-<summary>Tente fazer olhar a resposta</summary>
+<summary>Tente fazer sem olhar a resposta</summary>
 cd ../audit
 </details><br>
 
