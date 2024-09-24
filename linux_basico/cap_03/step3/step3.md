@@ -49,7 +49,7 @@ Nos sistemas de arquivos do Linux (ou melhor, em qualquer sistema _Linux-like_),
 
 Vamos dar uma olhada na imagem abaixo.
 
-![Scan results](../images/tree.png)
+![Scan results](../images/tree.jpg)
 
 Suponha que eu esteja no diretório **/home/user2/dir1** (_X_). Se eu quiser ir para o diretório **/var/log/nginx** (_Y_), posso fazer isso de duas maneiras:
 
