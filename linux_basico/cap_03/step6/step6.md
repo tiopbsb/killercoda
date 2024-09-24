@@ -1,34 +1,42 @@
-## Os caracteres coringas
-Coringas (ou _wildcards_) são caracteres especiais usados para corresponder a padrões em nomes de arquivos e diretórios. Eles são extremamente úteis para realizar ações sobre múltiplos arquivos ou diretórios que correspondam a um certo padrão.
+## Teste seu conhecimento
 
-Aqui estão os principais coringas e seus usos:
+Q1: Como verificar o diretório atual?
 
-### Asterisco ( **\*** )
-O `*`{{}} representa qualquer sequência de caracteres (incluindo nenhum). Ele é amplamente usado para selecionar todos os arquivos que correspondam a um certo padrão.
+<details> <summary>Resposta</summary> pwd </details><br>
 
-`ls -l arq*`{{exec}}
+Q2: Eu estou em _/home/user1_. Quero ir para _/home/user2_ usando caminho absoluto. Como devo fazer isso?
 
-### Interrogação ( **?** )
-O `?`{{}} representa um único caractere. Ele é usado para combinar nomes de arquivos que tenham um determinado número de caracteres e onde apenas um caractere específico varia.
+<details> <summary>Resposta</summary> cd /home/user2 </details><br>
 
-`la -l arquivo0?`{{exec}}
+Q3: O que significa **~**?
 
-### Colchetes ( **[ ]** )
-Os colchetes permitem que você especifique um conjunto de caracteres que pode aparecer em uma determinada posição.
+1. diretório root
+2. diretório home
+3. diretório temporário
+4. diretório anterior
 
-`la -l arquivo0[24]`{{exec}}
+<details> <summary>Resposta</summary> Opção 2: diretório home </details><br>
 
-### Hífen dentro dos colchetes ( [x **-** y] )
-Dentro de colchetes, o hífen permite que você defina um intervalo de caracteres (entre _x_ e _y_).
+Q5: Quero navegar para o meu diretório _home_. Selecione todas as opções corretas:
 
-`la -l arquivo0[2-4]`{{exec}}
+1. cd HOME
+2. cd
+3. cd /home/mydir
+4. cd $HOME
+5. cd ~
 
-### Circunflexo dentro de colchetes ( [ **^** ] )
-Colocando `^`{{}} (ou ainda o `!`{{}}) logo após o colchete de abertura ([^...] ou [!...]), você pode corresponder a qualquer caractere que não esteja dentro dos colchetes.
+<details> <summary>Resposta</summary> Opções 2, 4 e 5 </details><br>
 
-`la -l arquivo0[^24]`{{exec}}
+Q6: Quero navegar para diretório _app/tests_ que está dentro do meu _diretório home_ usando $HOME:
 
-### Chaves ( **{ }** )
-As chaves são usadas para expandir um conjunto de opções e criar padrões mais complexos. Diferente dos outros coringas, elas não são padrões globais, mas são expandidas pelo próprio shell antes de passar as opções para o comando.
+<details> <summary>Resposta</summary> cd $HOME/app/tests </details><br>
 
-`ls -l arquivo0{2,3}`{{exec}}
+Q7: Quero criar 100 diretórios nomeados de hello001 a hello100. Qual é o comando?
+
+<details> <summary>Resposta</summary> mkdir hello{001..100} </details><br>
+Q8: Para remover todos os diretórios de /directory, eu tenho que executar (não use o comando rm):
+
+<details> <summary>Resposta</summary> rmdir /directory/* </details><br>
+Q9: Como remover tudo sem confirmação de /mydir/somedir? Considere que você está em /mydir e somedir também deve ser removido (não use o caminho absoluto).
+
+<details> <summary>Resposta</summary> rm -rf somedir </details><br>

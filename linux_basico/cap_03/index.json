@@ -6,32 +6,28 @@
 		},
 		"steps": [
 			{
-				"title": "Criar diretórios",
+				"title": "1. Criar diretórios",
 				"text": "step1/step1.md"
 			},
 			{
-				"title": "Ande pelos diretórios",
+				"title": "2. Navegue pelos diretórios",
 				"text": "step2/step2.md"
 			},
 			{
-				"title": "Ande pelos diretórios, parte 2",
+				"title": "3. Navegue pelos diretórios, parte 2",
 				"text": "step3/step3.md"
 			},
 			{
-				"title": "Volte para casa",
+				"title": "4. Volte para casa",
 				"text": "step4/step4.md"
 			},
 			{
-				"title": "'Apagando diretórios",
+				"title": "5. Apagando diretórios",
 				"text": "step5/step5.md"
 			},
 			{
-				"title": "???",
+				"title": "6. Quiz",
 				"text": "step6/step6.md"
-			},
-			{
-				"title": "Teste seus conhecimentos",
-				"text": "step7/step7.md"
 			},
 			{
 				"title": "Prova final",

@@ -62,7 +62,7 @@ Agora vamos tentar...
 
 Uau!!! Funcionou... Mas você percebe o poder deste comando?
 
->`rm -rf DIR`{{}} Apaga **TODO** o conteúdo do diretório _DIR_. **Sem confirmação**! Ao executar este comando, esteja certo do que está fazendo, pois **não há** CTRL+Z que trará seu diretório de volta.
+>`rm -rf DIR`{{}} apaga **TODO** o conteúdo do diretório _DIR_. **Sem confirmação**! Ao executar este comando, esteja certo do que está fazendo, pois **não há** CTRL+Z que trará seu diretório de volta.
 
 Tente:
 
