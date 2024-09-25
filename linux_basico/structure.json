@@ -1,21 +1,26 @@
 {
-  "title": "Fundamentos do Linux",
-  "description": "Linux para iniciantes",
-  "items": [
-    { 
-      "path": "cap_01", 
-      "title": "Capítulo I: listando arquivos",
-      "description": "Listando arquivos e diretórios" 
-    },
-    { 
-      "path": "cap_02", 
-      "title": "Capítulo II: man - o seu melhor amigo",
-      "description": "O manual dos comandos do Linux" 
-    },
-    { 
-      "path": "cap_03", 
-      "title": "Capítulo III: Trabalhando com diretórios",
-      "description": "Crie, apague, mova e navegue através dos diretórios" 
-    }
-  ]
+	"title": "Fundamentos do Linux",
+	"description": "Linux para iniciantes",
+	"items": [
+		{ 
+			"path": "cap_01", 
+			"title": "Capítulo I: listando arquivos",
+			"description": "Listando arquivos e diretórios" 
+		},
+		{ 
+			"path": "cap_02", 
+			"title": "Capítulo II: man - o seu melhor amigo",
+			"description": "O manual dos comandos do Linux" 
+		},
+		{ 
+			"path": "cap_03", 
+			"title": "Capítulo III: Trabalhando com diretórios",
+			"description": "Crie, apague e navegue através dos diretórios" 
+		},
+		{ 
+			"path": "cap_04", 
+			"title": "Capítulo IV: Trabalhando com arquivos",
+			"description": "Como criar e apagar arquivos" 
+		}
+	]
 }
