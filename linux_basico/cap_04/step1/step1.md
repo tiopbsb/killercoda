@@ -25,7 +25,7 @@ Como faríamos para listar apenas `arquivo1`{{}} e `arquivo2`{{}} ?
 
 <details>
 <summary>Resposta</summary>
-ls arquivo*
+ls arquivo?
 </details><br>
 
 Lembra dos _dotfiles_? Vamos criar um arquivo oculto.

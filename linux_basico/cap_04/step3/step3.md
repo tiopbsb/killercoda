@@ -1,49 +1,50 @@
-## Listar todos os arquivos
+## Outros modos de criar arquivos
 
-Talvez você já saiba que existem muitos arquivos e diretórios que são ocultos. Isso geralmente significa que esses objetos não são listados ao usar comandos padrão de listagem ou ainda na visualização padrão em interfaces gráficas - GUI (_Graphical User Interface_). 
+É importante salientar que há outras maneiras de criarmos arquivos no Linux.
 
-O Linux usa um ponto (.) no início do nome do objeto oculto. Estes arquivos ambém são chamados de _dotfiles_. Ok, vamos listar os arquivos novamente.
+### Com um editor de textos
 
-`ls`{{exec}}
+O Linux possui aplicações para edição de textos. Dois exemplos são o **vim** e o **nano**.
 
-Humm, será que há arquivos ocultos?
+Podemos, ao carregá-los, passar o nome do arquivo como parâmetro. E caso o arquivo não exista, será criado. Vejamos.
 
-Sim, precisamos encontrar a _opção_ apropriada. Desta vez será `-a`{{}} ou `--all`{{}}.
+`nano meu_arquivo.txt`{{exec}}
 
-`ls -a`{{exec}}
+Escrva algumas linha. Pressione `CTRL+O`{{}} para salvar (confirme o nome). Para sair, pressione `CTRL+X`{{}}.
 
-Esse comando listou muito mais arquivos do que antes. Muitos _dotfiles_! Não importa o que eles são, pelo menos por enquanto. Mas dois deles precisam ser explicados.
+Observe o seu arquivo criado:
 
-- `.`{{}} 
-- `..`{{}}
+`ls meu_arquivo.txt`{{exec}}
 
-O primeiro, `.`{{}} simplesmente significa o diretório atual em que você se encontra.
+Use o comando `cat`{{}} (con**CAT**enate) para visualizar o conteúdo de um arquivo.
 
-o segundo, `..`{{}} significa o diretório pai. Ou seja, o diretório que está um nível acima daquele em que você se encontra.
+>**Sintaxe:**
+>cat [OPTION]... FILE...
+> - OPTION: opções do comando.
+> - FILE: nome do arquivo que se quer ler.
 
-Simples assim :)
+`cat meu_arquivo.txt`{{exec}}
 
-> As entradas especiais `.`{{}} e `..`{{}} servem para traçar um caminho relativo de um objeto. Ou seja, o caminho até o objeto, em relação ao diretório em que o usuário se encontra.
-Exemplo: é fácil perceber que o comando `ls .` pode mostrar resultados diferentes infulenciados pelo conteúdo do diretório em que é aplicado.
+>É melhor deixar para usar o ***_vim_*** um pouco mais a frente.
 
-Então... Vamos tentar algo.
+### Com o comando **echo**.
 
-`ls .`{{exec}}
+Lembra do comando `echo`{{}}? Usamos em alguma aula passada para imprimir algo na tela.
 
-Irá mostrar exatamente a mesma saída que o simples `ls`{{}}. E
+Podemos usar um 'direcionador' (`>`) oara enviar a saída do comando `echo`{{}} para um arquivo. Veja os exemplos.
 
-`ls ..`{{exec}}
+`echo "Mais uma linha" `{{}}
 
-mostra... sim, a estrutura do diretório pai!
+`echo "Mais uma linha" > meu_arquivo.txt`{{}}
 
-A última _opção_ para esta seção é `-A`{{}} (A maiúsculo). Enquanto `-a`{{}} significa "_all_ - todos", `-A`{{}} significa "_almost all_ (quase todos)". Nesse caso, o comando mostrará todos os arquivos, exceto `.`{{}} e `..`{{}}.
+Observe o conteúdo:
 
-Vamos tentar: `ls -A`{{exec}}
+`cat meu_arquivo.txt`{{exec}}
 
-Ok, última coisa por agora. Podemos combinar múltiplas opções em um comando. Tente executar:
+Caso não tenha percebido, o conteúdo do arquivo foi sobrescrito. É isso que faz o direcionador `>`{{}}. Caso queira que um novo conteúdo seja **adicionado** ao final do arquivo, use o direcionador `>>`{{}}.
 
-`ls -al`{{exec}}
+`echo "Esta é uma nova linha" > meu_arquivo.txt`{{}}
 
-> Note que ao selecionar mais de uma _opção_, usa-se apenas um traço `-`{{}} antecedendo-os.
+Confirme:
 
-O que você vê?
+`cat meu_arquivo.txt`{{exec}}
