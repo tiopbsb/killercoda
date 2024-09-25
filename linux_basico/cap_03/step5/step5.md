@@ -41,7 +41,7 @@ Com este comando, SIM!
 Para remover diretórios não vazios e todo o seu conteúdo, precisaremos de outro comando: o `rm`{{}} (**R**e**M**ove).
 
 >**Sintaxe:**
->rm [OPTION]... [FILE]...
+> - rm [OPTION]... [FILE]...
 > - OPTION: opções do comando
 > - FILE: nome do arquivo a ser apagado.
 

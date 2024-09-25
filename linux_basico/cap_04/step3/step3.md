@@ -10,7 +10,7 @@ Podemos, ao carregá-los, passar o nome do arquivo como parâmetro. E caso o arq
 
 `nano meu_arquivo.txt`{{exec}}
 
-Escrva algumas linha. Pressione `CTRL+O`{{}} para salvar (confirme o nome). Para sair, pressione `CTRL+X`{{}}.
+Escreva algumas linha. Observe o _menu_ de opções no rodapé do editor. Pressione `CTRL+O`{{}} para salvar (confirme o nome). Para sair, pressione `CTRL+X`{{}}.
 
 Observe o seu arquivo criado:
 
@@ -19,7 +19,7 @@ Observe o seu arquivo criado:
 Use o comando `cat`{{}} (con**CAT**enate) para visualizar o conteúdo de um arquivo.
 
 >**Sintaxe:**
->cat [OPTION]... FILE...
+> - cat [OPTION]... FILE...
 > - OPTION: opções do comando.
 > - FILE: nome do arquivo que se quer ler.
 
@@ -27,11 +27,11 @@ Use o comando `cat`{{}} (con**CAT**enate) para visualizar o conteúdo de um arqu
 
 >É melhor deixar para usar o ***_vim_*** um pouco mais a frente.
 
-### Com o comando **echo**.
+### Com os direcionadores **>** e **>>**.
 
 Lembra do comando `echo`{{}}? Usamos em alguma aula passada para imprimir algo na tela.
 
-Podemos usar um 'direcionador' (`>`) oara enviar a saída do comando `echo`{{}} para um arquivo. Veja os exemplos.
+Podemos usar o 'direcionador' (`>`) para enviar a saída do comando `echo`{{}} para um arquivo. Veja os exemplos.
 
 `echo "Mais uma linha" `{{}}
 
@@ -48,3 +48,11 @@ Caso não tenha percebido, o conteúdo do arquivo foi sobrescrito. É isso que f
 Confirme:
 
 `cat meu_arquivo.txt`{{exec}}
+
+Os direcionadores podem ser usados com qualquer comando. Tente
+
+`ls -d /* > diretorios_da_raiz`{{exec}}
+
+Dê uma olhada no arquivo criado:
+
+`cat diretorios_da_raiz`{{exec}}

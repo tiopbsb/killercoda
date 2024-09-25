@@ -15,9 +15,9 @@ Também podemos remover múltiplos arquivos:
 
 E sim, podemos remover todos os arquivos, diretórios, toda a estrutura:
 
-rm -rf testdir
+`rm -rf testdir`{{}}
 
-Lemba do `rm-rf`{{}}, certo? Isso foi explicado na lição anterior.
+Lemba do `rm -rf`{{}}, certo? Isso foi explicado na lição anterior.
 
 >**Obs.:** Note que o sistema não pede confirmação para apagar arquivos. E também não importa se o arquivo está vazio ou não.
 
