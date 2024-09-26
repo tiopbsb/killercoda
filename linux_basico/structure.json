@@ -21,6 +21,11 @@
 			"path": "cap_04", 
 			"title": "Capítulo IV: Trabalhando com arquivos",
 			"description": "Como criar e apagar arquivos" 
+		},
+		{ 
+			"path": "cap_05", 
+			"title": "Capítulo V: Pipes",
+			"description": "Onde a magia começa..." 
 		}
 	]
 }

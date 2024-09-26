@@ -6,28 +6,37 @@
 		},
 		"steps": [
 			{
-				"title": "1. Criar diretórios",
+				"title": "Primeira olhada no comando 'ls'",
 				"text": "step1/step1.md"
 			},
 			{
-				"title": "2. Navegue pelos diretórios",
+				"title": "Obtenha mais informações",
 				"text": "step2/step2.md"
 			},
 			{
-				"title": "3. Navegue pelos diretórios, parte 2",
+				"title": "Liste todos os arquivos",
 				"text": "step3/step3.md"
 			},
 			{
-				"title": "4. Volte para casa",
+				"title": "Ordenando os arquivos",
 				"text": "step4/step4.md"
 			},
 			{
-				"title": "5. Apagando diretórios",
+				"title": "'help' e outras opções",
 				"text": "step5/step5.md"
 			},
 			{
-				"title": "6. Quiz",
+				"title": "Os coringas do Linux",
 				"text": "step6/step6.md"
+			},
+			{
+				"title": "Teste seus conhecimentos",
+				"text": "step7/step7.md"
+			},
+			{
+				"title": "Prova final",
+				"text": "step8/step8.md",
+				"verify": "step8/verify.sh"
 			}
 		],
 		"finish": {
