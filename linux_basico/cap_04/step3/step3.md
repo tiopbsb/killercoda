@@ -49,10 +49,4 @@ Confirme:
 
 `cat meu_arquivo.txt`{{exec}}
 
-Os direcionadores podem ser usados com qualquer comando. Tente
-
-`ls -d /* > diretorios_da_raiz`{{exec}}
-
-Dê uma olhada no arquivo criado:
-
-`cat diretorios_da_raiz`{{exec}}
+Falaremos mais disso no próximo capítulo.
