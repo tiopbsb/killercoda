@@ -6,27 +6,27 @@
 		},
 		"steps": [
 			{
-				"title": "Primeira olhada no comando 'ls'",
+				"title": "1. Primeira olhada no comando 'ls'",
 				"text": "step1/step1.md"
 			},
 			{
-				"title": "Obtenha mais informações",
+				"title": "2. Obtenha mais informações",
 				"text": "step2/step2.md"
 			},
 			{
-				"title": "Liste todos os arquivos",
+				"title": "3. Liste todos os arquivos",
 				"text": "step3/step3.md"
 			},
 			{
-				"title": "Ordenando os arquivos",
+				"title": "4. Ordenando os arquivos",
 				"text": "step4/step4.md"
 			},
 			{
-				"title": "'help' e outras opções",
+				"title": "5. 'help' e outras opções",
 				"text": "step5/step5.md"
 			},
 			{
-				"title": "Os coringas do Linux",
+				"title": "6. Os coringas do Linux",
 				"text": "step6/step6.md"
 			},
 			{
@@ -34,9 +34,13 @@
 				"text": "step7/step7.md"
 			},
 			{
+				"title": "Revisão",
+				"text": "step8/step8.md"
+			},
+			{
 				"title": "Prova final",
-				"text": "step8/step8.md",
-				"verify": "step8/verify.sh"
+				"text": "step9/step9.md",
+				"verify": "step9/verify.sh"
 			}
 		],
 		"finish": {

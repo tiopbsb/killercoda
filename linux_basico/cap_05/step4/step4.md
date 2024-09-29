@@ -1,105 +1,37 @@
-## Ordenação
-Obviamente, todas as listas podem ser ordenadas. No Linux não seria diferente.
+## Quiz
 
-O Linux nos permite listar arquivos usando várias opções de ordenação. O comando `ls`{{}} tem algumas opções integradas. O primeiro tipo de ordenação já observamos. Por padrão, o `ls`{{}} ordena os arquivos em ordem alfabética. Vamos tentar algo diferente.
+Q1: O sinal **|** é usado para pipe ou redirecionamento?
 
-Antes de começarmos, no entanto, há um conceito que precisamos abordar. O Linux tem diferentes `timestamps`{{}}, três, para ser exato:
+<details><summary>Resposta</summary>pipe</details><br>
 
-- atime - o último momento em que o arquivo foi acessado.
-- mtime - o último momento de modificação. Por modificação, queremos dizer mudanças no conteúdo do arquivo.
-- ctime - o último momento de modificação dos metadados. Aqui nos referimos a mudanças de permissões, localização do arquivo, etc.
+Q2: Qual exemplo representa a situação em que o Comando2 opera na saída do Comando1?
+1. Comando2 | Comando1
+2. Comando1 || Comando2
+3. Comando1 | Comando2
+4. Comando1 | Comando3 | Comando2
 
-É essencial que você entenda isso.
+<details><summary>Resposta</summary>Opção 3</details><br>
 
-### O que é um _timestamp_?
+Q3: Eu tenho um arquivo onde cada linha contém uma palavra. Quero saber quantas palavras únicas eu tenho no arquivo. Qual comando fará isso?
+1. cat arquivo | sort | wc -l
+2. cat arquivo | sort | wc -l | uniq
+3. cat arquivo | uniq | sort | wc -l
+4. cat arquivo | wc -l | uniq | sort
+5. cat arquivo | sort | uniq | wc -l
 
-É a representação numérica do tempo. É o número de segundos passados desde a _Unix epoch_, que é meia-noite do dia 1º de janeiro de 1970.
+<details><summary>Resposta</summary>Opção 5</details><br>
 
-> O _timestamp_ 1 representa a data e hora **01/01/1970 00:00:01**. A partir daí, o valor do _timestamp_ é incrementado de 1 a cada segundo que passa. Ou seja, o _timestamp_ de uma determinada data e hora é a quantidade de segundos desde 01/01/1970 00:00:00 até a referida data e hora.
+Q4: Que sinal eu devo usar para adicionar ao arquivo quando o redirecionamento é usado?
 
-Um exemplo de como ele é mostrado está abaixo:
+1. =
+2. <
+3. <<
 
-```
-$ date
-Mon 01 Nov 2021 08:14:52 PM UTC
-$ date +%s
-1635797690
-```
+<details><summary>Resposta</summary>Opção 1</details><br>
 
-Bem, de quebra, aprendemos um novo comando - `date`{{}}. Basta dizer que esse comando mostra a data e hora atuais:
+Q5: O comando wc -l < numeros.txt fará
+1. contar letras no nome do arquivo
+2. contar o número de linhas no arquivo numeros.txt
+3. escrever a contagem no arquivo numeros.txt
 
-`date`{{exec}}
-
-A primeira _opção_ de ordenação será `-t`{{}}. Essa _opção_ ordena os arquivos pelo tempo da última modificação, com os arquivos mais recentes aparecendo primeiro.
-
-Vamos tentar:
-
-`ls -lt`{{exec}}
-
-Usamos duas opções para observar melhor as coisas. Podemos especificar exatamente o tempo de modificação adicionando `u`{{}} à lista de opções. Mas, por favor, lembre-se de que, para imprimir essa informação corretamente, você deve usar `t`{{}} com outra opção (neste caso, `u`{{}}).
-
-`ls -ltu`{{exec}}
-
-Ok, agora vamos listar e ordenar pelos metadados (_ ctime_  - mudança de metadados).
-
-`ls -ltc`{{exec}}
-Bem, não mudou muito, certo? Por favor, execute esses comandos e observe cuidadosamente a saída:
-
-`touch oArquivoMaisNovo`{{exec}}
-> O último comando cria um novo arquivo chamado `oArquivoMaisNovo`.
-
-`ls -ltu`{{exec}}
-
-`ls -ltc`{{exec}}
-
-`echo "uma nova linha adicionada!" > arquivo02`{{exec}} 
-> O último comando adiciona algo ao arquivo, alterando o seu conteúdo.
-
-`ls -ltu`{{exec}}
-
-`ls -ltc`{{exec}}
-
-`chmod 444 arquivo.txt`{{exec}}
-> O último comando muda as permissões do arquivo, alterando seus metadados.
-
-`ls -ltu`{{exec}}
-
-`ls -ltc`{{exec}}
-
-Por favor, dedique um tempo para entender o que foi impresso e como. Usamos alguns comandos novos, mas não perca muito tempo com eles agora.
-
-### Ordenar conteúdo por tamanho
-
-OK, já sabemos como ordenar arquivos por tempo, agora vamos aprender como fazer isso por tamanho.
-
-Como de costume, temos várias opções para isso.
-
-Primeiro, executamos este comando:
-
-`ls -s`{{exec}} ('s' minúsculo)
-
-Isso mostra uma lista curta dos arquivos e o espaço alocado. Como já sabemos, podemos combinar essa _opção_, `-s`{{}}, com outros. Vamos fazer isso:
-
-`ls -ls`{{exec}}
-
-Mas isso é o que você já tem por padrão, usando `ls -l`{{}}, certo? Não? Você está correto, a resposta é não. Dê uma olhada no início de cada linha, é onde você pode ver o que foi adicionado pelo `-s`{{}}.
-
-Por que usamos `s`{{}}? Eu queria que você prestasse atenção aqui. Quando usamos o `S`{{}} maiúsculo, isso significa ordenar.
-
-`ls -lS`{{exec}} isso ordena os arquivos por tamanho, começando pelos maiores.
-
-> **Então, as opções são sensíveis a maiúsculas e minúsculas, como... tudo no Linux.**
-
-Antes de usarmos o próximo comando, há uma opção a mais que precisamos aprender. Essa _opção_ é `--human-readable`{{}}, ou melhor, `-h`{{}}.
-
-Vamos tentar:
-
-`ls -lh`{{exec}} isso imprime o tamanho dos arquivos não em bytes, mas de forma mais legível, com K (KiloByte), M (MegaByte), ou G (GigaByte).
-
-O `h`{{}} usa potências de 1024. Então, 1K é 1 elevado a 1024. Temos outra _opção_:
-
-`ls -l --si`{{exec}} que usa potências de 1000. Mas... acho que ninguém usa isso. :)
-
-Ok, vamos tentar ordenar com a _opção_ `h`{{}}:
-
-`ls -lSh`{{exec}}
+<details><summary>Resposta</summary>Opção 2</details><br>

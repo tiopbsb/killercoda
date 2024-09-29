@@ -1,4 +1,4 @@
-# O que significa `ls`{{}}?
+## O que significa `ls`{{}}?
 
 O primeiro comando que aprenderemos é o `ls`{{}}. Este comando vem da palavra `list`{{}}. Isso nos permite... listar o conteúdo de um diretório.
 

@@ -6,32 +6,36 @@
 		},
 		"steps": [
 			{
-				"title": "Conceito",
+				"title": "1. Conceito",
 				"text": "step1/step1.md"
 			},
 			{
-				"title": "Como usar o 'man'",
+				"title": "2. Como usar o 'man'",
 				"text": "step2/step2.md"
 			},
 			{
-				"title": "Estrutura",
+				"title": "3. Estrutura",
 				"text": "step3/step3.md"
 			},
 			{
-				"title": "Navegação",
+				"title": "4. Navegação",
 				"text": "step4/step4.md"
 			},
 			{
-				"title": "Explorando o 'man'",
+				"title": "5. Explorando o 'man'",
 				"text": "step5/step5.md"
 			},
 			{
-				"title": "Algumas utilidade",
+				"title": "6. Algumas utilidade",
 				"text": "step6/step6.md"
 			},
 			{
-				"title": "É o fim...",
+				"title": "7. É o fim...",
 				"text": "step7/step7.md"
+			},
+			{
+				"title": "Revisão",
+				"text": "step8/step8.md"
 			}
 		],
 		"finish": {

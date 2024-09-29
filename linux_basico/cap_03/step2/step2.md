@@ -2,7 +2,7 @@
 Já sabemos o que há dentro de `dir_pai`{{}}. Vamos até lá agora. Para mudar de diretório, precisamos usar o comando `cd`{{}} (_**C**hange **D**irectory_).
 
 >**Sintaxe:**
-> - chdir DIRECTORY...
+> - cd DIRECTORY...
 > - DIRECTORY: nome do diretório.
 
 `cd dir_pai`{{exec}}

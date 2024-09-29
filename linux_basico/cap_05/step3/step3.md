@@ -1,49 +1,51 @@
-## Listar todos os arquivos
+## Redirecionar **de** um arquivo
 
-Talvez você já saiba que existem muitos arquivos e diretórios que são ocultos. Isso geralmente significa que esses objetos não são listados ao usar comandos padrão de listagem ou ainda na visualização padrão em interfaces gráficas - GUI (_Graphical User Interface_). 
+Fizemos redirecionamento _para_ o arquivo. Também podemos fazer na direção oposta.
 
-O Linux usa um ponto (.) no início do nome do objeto oculto. Estes arquivos também são chamados de _dotfiles_. Ok, vamos listar os arquivos novamente.
+Temos nosso arquivo _numeros.txt_. Quando o imprimimos, vemos:
 
-`ls`{{exec}}
+`cat numeros.txt`{{exec}}
 
-Humm, será que há arquivos ocultos?
+Ok, vamos usar este arquivo como entrada para nossos comandos.
 
-Sim, precisamos encontrar a _opção_ apropriada. Desta vez será `-a`{{}} ou `--all`{{}}.
+Você se lembra de como contamos o número de linhas no arquivo?
 
-`ls -a`{{exec}}
+`cat numeros.txt | wc -l`{{exec}}
 
-Esse comando listou muito mais arquivos do que antes. Muitos _dotfiles_! Não importa o que eles são, pelo menos por enquanto. Mas dois deles precisam ser explicados.
+>**Nota**. Esta não é a melhor maneira de fazermos isso! O uso do `cat`{{}} para este fim está pra lá de obsoleto.
 
-- `.`{{}} 
-- `..`{{}}
+Podemos simplesmente fazer:
 
-O primeiro, `.`{{}} simplesmente significa o diretório atual em que você se encontra.
+`wc -l numeros.txt`{{exec}}
 
-o segundo, `..`{{}} significa o diretório pai. Ou seja, o diretório que está um nível acima daquele em que você se encontra.
+Ok, funciona. Temos o número de linhas, mas... também temos um nome de arquivo. Sim, podemos fazer coisas diferentes para removê-lo. Um exemplo? Sim, por que não!
 
-Simples assim :)
+`wc -l numeros.txt | awk '{print $1}'`{{exec}}
 
-> As entradas especiais `.`{{}} e `..`{{}} servem para traçar um caminho relativo de um objeto. Ou seja, o caminho até o objeto, em relação ao diretório em que o usuário se encontra.
-Exemplo: é fácil perceber que o comando `ls .` pode mostrar resultados diferentes infulenciados pelo conteúdo do diretório em que é aplicado.
+ou...
 
-Então... Vamos tentar algo.
+`awk 'END{print NR}' numeros.txt`{{exec}}
 
-`ls .`{{exec}}
+(Agora você pode sair e impressionar todos ao seu redor com o que sabe sobre Bash e awk! ;) )
 
-Irá mostrar exatamente a mesma saída que o simples `ls`{{}}. E
+Mas queremos usar redirecionamento para contar as linhas.
 
-`ls ..`{{exec}}
+`wc -l < numeros.txt`{{exec}}
 
-mostra... sim, a estrutura do diretório pai!
+Ok. Vamos escrever esse número em outro arquivo:
 
-A última _opção_ para esta seção é `-A`{{}} (A maiúsculo). Enquanto `-a`{{}} significa "_all_ - todos", `-A`{{}} significa "_almost all_ (quase todos)". Nesse caso, o comando mostrará todos os arquivos, exceto `.`{{}} e `..`{{}}.
+`wc -l < numeros.txt > contagem.txt`{{exec}}
 
-Vamos tentar: `ls -A`{{exec}}
+`cat contagem.txt`{{exec}}
 
-Ok, última coisa por agora. Podemos combinar múltiplas opções em um comando. Tente executar:
+— temos isso!
 
-`ls -al`{{exec}}
+Podemos fazer coisas loucas (e às vezes inúteis), como:
 
-> Note que ao selecionar mais de uma _opção_, usa-se apenas um traço `-`{{}} antecedendo-os.
+`sort < numeros.txt | uniq`{{exec}}
 
-O que você vê?
+O redirecionamento de entrada, **<**, é usado principalmente para redirecionar conteúdo para um arquivo, a fim de realizar algumas operações. Vamos ver um exemplo muito simples de uma linha:
+
+`while read line; do echo "Conteúdo da linha: ${line}"; done < numeros.txt`{{exec}}
+
+O que acabamos de fazer? Criamos um loop (falaremos sobre isso mais tarde) e imprimimos cada linha do arquivo, enquanto houver algo mais no arquivo _numeros.txt_.

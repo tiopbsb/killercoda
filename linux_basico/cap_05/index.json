@@ -6,37 +6,24 @@
 		},
 		"steps": [
 			{
-				"title": "Primeira olhada no comando 'ls'",
+				"title": "1. Conectando os comandos",
 				"text": "step1/step1.md"
 			},
 			{
-				"title": "Obtenha mais informações",
+				"title": "2. Redirecionamento da saída",
 				"text": "step2/step2.md"
 			},
 			{
-				"title": "Liste todos os arquivos",
+				"title": "3. Redirecionamento da entrada",
 				"text": "step3/step3.md"
 			},
 			{
-				"title": "Ordenando os arquivos",
+				"title": "Quiz",
 				"text": "step4/step4.md"
 			},
 			{
-				"title": "'help' e outras opções",
+				"title": "Revisão",
 				"text": "step5/step5.md"
-			},
-			{
-				"title": "Os coringas do Linux",
-				"text": "step6/step6.md"
-			},
-			{
-				"title": "Teste seus conhecimentos",
-				"text": "step7/step7.md"
-			},
-			{
-				"title": "Prova final",
-				"text": "step8/step8.md",
-				"verify": "step8/verify.sh"
 			}
 		],
 		"finish": {

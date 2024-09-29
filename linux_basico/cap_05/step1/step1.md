@@ -13,7 +13,7 @@ Vamos pensar em alguns exemplos:
 
 Antes de começarmos, aqui estão alguns comandos que utilizaremos ao aprender sobre _pipes_. Obviamente, todos esses comandos podem ser usados de forma independente:
 
-`grep`{{}} **(G**lobal **R**egular **E**xpression **P**rint). Este comando busca padrões de texto em arquivos ou na saída de outros comandos. Ele permite filtrar linhas que correspondem a um padrão especificado e exibe essas linhas como resultado.
+`grep`{{}} (**G**lobal **R**egular **E**xpression **P**rint). Este comando busca padrões de texto em arquivos ou na saída de outros comandos. Ele permite filtrar linhas que correspondem a um padrão especificado e exibe essas linhas como resultado.
 
 >**Sintaxe:**
 > - grep [OPTION] PATTERNS FILE
@@ -25,7 +25,7 @@ Exemplo 1: `grep 'case' .bashrc`{{exec}} irá procurar o padrão "case" no arqui
 
 Exemplo 2: `grep 'aluno' /etc/passwd`{{exec}} irá procurar o padrão "aluno" no arquivo _/etc/passwd_.
 
-`wc` (**W**ord **C**ount). Utilitário para contar o número de linhas, palavras e bytes (ou caracteres) em arquivos ou na saída de outros comandos. Ele é frequentemente utilizado para obter informações sobre o tamanho ou conteúdo de um arquivo ou de uma entrada de texto.
+`wc`{{}} (**W**ord **C**ount). Utilitário para contar o número de linhas, palavras e bytes (ou caracteres) em arquivos ou na saída de outros comandos. Ele é frequentemente utilizado para obter informações sobre o tamanho ou conteúdo de um arquivo ou de uma entrada de texto.
 
 >**Sintaxe:**
 > - wc [OPTION] FILE
@@ -42,7 +42,7 @@ Exemplo: ao executar `wc -l .bashrc`{{exec}}, ele contará quantas linhas conté
 >**Sintaxe:**
 > - sort [OPTION] FILE
 
-Exemplo: `sort numbers.txt`{{exec}} irá ordenar um arquivo com números gerados.
+Exemplo: `sort numeros.txt`{{exec}} irá ordenar um arquivo com números gerados.
 
 `uniq`{{}}. É utilizada para filtrar e remover linhas duplicadas em um arquivo ou na saída de um comando. Suas principais características incluem:
 
@@ -67,17 +67,19 @@ Como funciona? A saída de _comando1_ é passada como entrada para _comando2_. E
 
 Vamos imprimir o arquivo primeiro.
 
-`cat numeros.txt`{{}}
+`cat numeros.txt`{{exec}}
 
 Ok, o arquivo é bastante grande. Quantos registros temos? Vamos usar um pipe com o comando que acabamos de usar para contar as linhas com `wc`{{}}!
 
-`cat numbers.txt | wc -l`{{exec}}
+`cat numeros.txt | wc -l`{{exec}}
 
-Temos o número de linhas no arquivo! Perfeito. Agora, vamos coletar informações sobre quantos registros únicos temos. 
+Temos o número de linhas no arquivo! Perfeito. Agora, vamos coletar informações sobre quantos registros únicos (diferentes) temos. 
+
+>**Nota**. Entenda como "registros únicos" aqueles que são diferentes. Ou seja, aqueles que aparecem ao menos uma vez na lista.
 
 Saiba que o arquivo contém todos os números de 1 a 100 (alguns desses números repetidos várias vezes, claro). Logo, devemos ter 100 registros únicos!
 
-`cat numbers.txt | uniq | wc -l`{{}}
+`cat numeros.txt | uniq | wc -l`{{}}
 
 Hm... algo não está certo. Vamos pensar...
 
@@ -87,12 +89,12 @@ Esquecemos de algo? Sim, esquecemos. No caso que temos aqui, usamos o `uniq`{{}}
 
 Vamos tentar:
 
-`cat numbers.txt | sort | uniq | wc -l`{{}}
+`cat numeros.txt | sort | uniq | wc -l`{{}}
 
 Sim! Agora funcionou.
 
 E este aqui?
 
-`sort -u numbers.txt | wc -l`{{}}
+`sort -u numeros.txt | wc -l`{{}}
 
 Mesmo resultado? Dê uma olhada na opção `-u`{{}} do comando `sort`{{}}...

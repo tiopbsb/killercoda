@@ -1,20 +1,13 @@
-## Mais algumas opções
-Para finalizar, algumas opções úteis. Dê uma olhada nesles:
+## ## O que aprendemos aqui?
 
-- `ls -al --author`{{exec}} imprime o nome de usuário do autor do arquivo.
-- `ls -ld`{{exec}} imprime o nome do diretório ao invés de seu conteúdo. Ex.: `ls -ld planilhas`{{exec}}.
-- `ls -ali`{{exec}} imprime inodes (haverá uma lição sobre inodes).
-- `ls -alR`{{exec}} imprime recursivamente todos os subdiretórios.
-- `ls -alr`{{exec}} imprime a lista em ordem inversa. Então,
-- `ls -alSr`{{exec}} o que é mostrado?
+Eis um resumo dos conceitos apresentados neste capítulo:
 
-> **Nota:** Em alguns casos (raros) o Sistema Operacional pode distinguir o autor (criador) do proprietário de um arquivo.
+1. O _pipe_ (**|**), que serve para 'concatecar' comandos aproveitando a saída de uns como entrada de outros;
+2. Revimos a utilizadade dos doringas **\*** e **?**;
+3. O comando `rm`{{}}, usado para deletar arquivos;
+4. Soubemos da existeência dos editores de texto `vim`{{}} e `nano`{{}};
+5. O comando `cat`{{}}, que lista o conteúdo de um arquivo;
+6. O comando `echo`{{}}, usado para 'imprimir' um conteúdo; e
+7. Os direcionadores `>`{{}} e `>>`{{}}, que usamos para redirecionar a saída do comando `echo`{{}} para um arquivo.
 
-### Conclusão
-Dois últimos comandos neste cenário:
-
-`ls --version`{{exec}} imprime a versão do aplicativo `ls`{{}}.
-
-Todos os comandos que usamos aqui estão disponíveis na ajuda. Como obter ajuda?
-
-`ls --help`{{exec}}
+Não deixe de praticar.

@@ -1,4 +1,4 @@
-## O que vimos neste capítulo?
+## O que aprendemos aqui?
 
 Eis um resumo dos conceitos apresentados neste capítulo:
 
