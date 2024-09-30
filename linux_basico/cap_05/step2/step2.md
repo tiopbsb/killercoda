@@ -67,5 +67,5 @@ Vamos conferir:
 Resumo sobre redirecionamentos
 
 Você precisa se lembrar que:
-1. _**>**_ criará um arquivo (se ele não existir) ou sobrescreverá todos os dados como se fosse um arquivo novo. 
-2. _**>>**_ funciona de maneira semelhante, no entanto, se já houver conteúdo no arquivo, essa redireção adicionará a saída do comando ao final do conteúdo existente.
+1. **>** criará um arquivo (se ele não existir) ou sobrescreverá todos os dados como se fosse um arquivo novo. 
+2. **>>** funciona de maneira semelhante, no entanto, se já houver conteúdo no arquivo, essa redireção adicionará a saída do comando ao final do conteúdo existente.

@@ -18,15 +18,23 @@ Podemos simplesmente fazer:
 
 `wc -l numeros.txt`{{exec}}
 
-Ok, funciona. Temos o número de linhas, mas... também temos um nome de arquivo. Sim, podemos fazer coisas diferentes para removê-lo. Um exemplo? Sim, por que não!
+Observe que o comando `wc`{{}} traz como resposta o nome do arquivo também. Às vezes pode ser que não queiramos isso.
+
+O comando `awk`{{}} (**A**ho, **W**einberger e **K**ernighan - seus criadores) é uma poderosa ferramenta usada para manipular e transformar dados em arquivos de texto, permitindo realizar operações como seleção, filtragem, formatação e relatórios. O `awk`{{}} lê a entrada linha por linha, divide cada linha em campos (usualmente separados por espaços ou delimitadores especificados) e permite que o usuário execute ações em cada linha ou campo. 
+
+>**awk '[PATTERN] ACTION' FILE**
+> - PATTERN (PADRÃO): é a condição que define quais linhas do arquivo devem ser processadas. Pode ser uma expressão regular, uma condição, ou uma linha específica..
+> - ACTION: o que deve ser feito com as linhas que correspondem ao padrão. Pode incluir comandos como _print_, operações aritméticas, etc.
+> - FILE: o nome do arquivo de entrada que será processado.
+
+Exemplos:
+1. Imprimir todas as linhas: `awk '{ print }' arquivo.txt`{{}}.
+2. Imprimir a primeira coluna de um arquivo: `awk '{ print $1 }' arquivo.txt`{{}}.
+3. Imprimir linhas que contêm uma palavra específica: `awk '/palavra/ { print }' arquivo.txt`{{}}.
+
+Vamos tentar isto:
 
 `wc -l numeros.txt | awk '{print $1}'`{{exec}}
-
-ou...
-
-`awk 'END{print NR}' numeros.txt`{{exec}}
-
-(Agora você pode sair e impressionar todos ao seu redor com o que sabe sobre Bash e awk! ;) )
 
 Mas queremos usar redirecionamento para contar as linhas.
 
@@ -36,9 +44,7 @@ Ok. Vamos escrever esse número em outro arquivo:
 
 `wc -l < numeros.txt > contagem.txt`{{exec}}
 
-`cat contagem.txt`{{exec}}
-
-— temos isso!
+`cat contagem.txt`{{exec}} — temos isso!
 
 Podemos fazer coisas loucas (e às vezes inúteis), como:
 
@@ -46,6 +52,6 @@ Podemos fazer coisas loucas (e às vezes inúteis), como:
 
 O redirecionamento de entrada, **<**, é usado principalmente para redirecionar conteúdo para um arquivo, a fim de realizar algumas operações. Vamos ver um exemplo muito simples de uma linha:
 
-`while read line; do echo "Conteúdo da linha: ${line}"; done < numeros.txt`{{exec}}
+`while read line; do echo "Conteúdo da linha: ${line}"; done < numeros.txt | sort | uniq`{{exec}}
 
 O que acabamos de fazer? Criamos um loop (falaremos sobre isso mais tarde) e imprimimos cada linha do arquivo, enquanto houver algo mais no arquivo _numeros.txt_.
